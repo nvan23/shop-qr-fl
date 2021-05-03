@@ -39,9 +39,9 @@ namespace shop_qr.Model
     partial void InsertCustomer(Customer instance);
     partial void UpdateCustomer(Customer instance);
     partial void DeleteCustomer(Customer instance);
-    partial void InsertManager(Manager instance);
-    partial void UpdateManager(Manager instance);
-    partial void DeleteManager(Manager instance);
+    partial void InsertManager(MManager instance);
+    partial void UpdateManager(MManager instance);
+    partial void DeleteManager(MManager instance);
     #endregion
 		
 		public DataShopDataContext() : 
@@ -106,11 +106,11 @@ namespace shop_qr.Model
 			}
 		}
 		
-		public System.Data.Linq.Table<Manager> Managers
+		public System.Data.Linq.Table<MManager> Managers
 		{
 			get
 			{
-				return this.GetTable<Manager>();
+				return this.GetTable<MManager>();
 			}
 		}
 	}
@@ -596,7 +596,7 @@ namespace shop_qr.Model
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Manager")]
-	public partial class Manager : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class MManager : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -627,7 +627,7 @@ namespace shop_qr.Model
     partial void OnPhoneChanged();
     #endregion
 		
-		public Manager()
+		public MManager()
 		{
 			OnCreated();
 		}
