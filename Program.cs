@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using shop_qr.View;
 
 namespace shop_qr
 {
@@ -16,7 +17,7 @@ namespace shop_qr
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Layout());
+            Application.Run(new Splash());
         }
     }
 }

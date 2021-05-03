@@ -57,9 +57,10 @@ namespace shop_qr
             indicator.Top = ((Control)sender).Top;
         }
 
-        private void getProfileCustomer_Click(object sender, EventArgs e)
+        private void buttonHistory_Click(object sender, EventArgs e)
         {
-
+            indicator.Top = ((Control)sender).Top;
+            pageContent.SetPage("History");
         }
     }
 }
