@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using shop_qr.View;
+using shop_qr.Model;
 
 namespace shop_qr
 {
@@ -27,7 +28,8 @@ namespace shop_qr
             arr[3] = new ProductModel(3, "Ban phim Logitech 3", 3);
             arr[4] = new ProductModel(4, "Ban phim Logitech 4", 4);
             dataGridViewProductToAdd.DataSource = arr;
-        }
+       
+    }
 
         private void buttonExitTab_Click(object sender, EventArgs e)
         {

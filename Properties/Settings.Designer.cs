@@ -33,5 +33,27 @@ namespace shop_qr.Properties {
                 return ((string)(this["shop_qrConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\database.mdf;" +
+            "Integrated Security=True;Connect Timeout=30")]
+        public string databaseConnectionString {
+            get {
+                return ((string)(this["databaseConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Shop.mdf;Inte" +
+            "grated Security=True;Connect Timeout=30")]
+        public string ShopConnectionString {
+            get {
+                return ((string)(this["ShopConnectionString"]));
+            }
+        }
     }
 }
