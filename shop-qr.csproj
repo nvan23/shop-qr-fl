@@ -256,11 +256,6 @@
     <EmbeddedResource Include="View\Product\Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="View\Splash.resx">
-      <DependentUpon>Splash.cs</DependentUpon>
-    </EmbeddedResource>
-=======
     <None Include="Model\DataShop.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DataShop.designer.cs</LastGenOutput>
@@ -269,7 +264,6 @@
     <None Include="Model\DataShop.dbml.layout">
       <DependentUpon>DataShop.dbml</DependentUpon>
     </None>
->>>>>>> 675c99c99538d78d0411ddedaf4cfdeb2ef3dc8a
     <None Include="packages.config" />
     <None Include="Product.xsc">
       <DependentUpon>Product.xsd</DependentUpon>
