@@ -8,21 +8,21 @@ namespace shop_qr.Model
 {
     class MCustomer
     {
-        public void Create(Customer customer)
+        public static void Create(Customer customer)
         {
             DataShopDataContext db = new DataShopDataContext();
             db.Customers.InsertOnSubmit(customer);
             db.SubmitChanges();
 
         }
-        public List<Customer> Read()
+        public static List<Customer> Read()
         {
             DataShopDataContext db = new DataShopDataContext();
             List<Customer> list = db.Customers.ToList<Customer>();
             return list;
 
         }
-        public void Update(Customer customer)
+        public static void Update(Customer customer)
         {
             DataShopDataContext db = new DataShopDataContext();
             Customer _customer = db.Customers.FirstOrDefault(e => e.Id.Equals(customer.Id));
@@ -31,7 +31,7 @@ namespace shop_qr.Model
             db.SubmitChanges();
         }
 
-        public void Delete(Customer customer)
+        public static void Delete(Customer customer)
         {
             DataShopDataContext db = new DataShopDataContext();
             Customer _customer = db.Customers.FirstOrDefault(e => e.Id.Equals(customer.Id));

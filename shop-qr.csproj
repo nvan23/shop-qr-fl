@@ -181,6 +181,10 @@
     <Compile Include="Layout.Designer.cs">
       <DependentUpon>Layout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\MMManager.cs" />
+    <Compile Include="Model\MBill.cs" />
+    <Compile Include="Model\MBillDetail.cs" />
+    <Compile Include="Model\MProduct.cs" />
     <Compile Include="Model\MCustomer.cs" />
     <Compile Include="Model\DataShop.designer.cs">
       <AutoGen>True</AutoGen>
