@@ -183,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\Bill\Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
@@ -209,6 +210,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="Resources\buy_32px1.png" />
+    <None Include="Resources\buy_32px.png" />
+    <None Include="Resources\product_documents_32px.png" />
+    <None Include="Resources\customer_32px.png" />
+    <None Include="Resources\customer_16px.png" />
+    <None Include="Resources\customer_64px.png" />
+    <None Include="Resources\icons8_customer_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
