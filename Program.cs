@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using shop_qr.View;
-
+using shop_qr.Model;
 namespace shop_qr
 {
     static class Program
