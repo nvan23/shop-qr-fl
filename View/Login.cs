@@ -19,13 +19,18 @@ namespace shop_qr.View
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Layout().Show();
+            new AppLayout().Show();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

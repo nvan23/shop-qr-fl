@@ -48,6 +48,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
@@ -173,14 +182,14 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Layout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Layout.Designer.cs">
-      <DependentUpon>Layout.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\MMManager.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MBillDetail.cs" />
@@ -205,11 +214,26 @@
     <Compile Include="View\Bill\Bill.Designer.cs">
       <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Bill\IBill.cs" />
     <Compile Include="View\Customer\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Customer\Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\ICustomer.cs" />
+    <Compile Include="View\History\History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\History\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\History\IHistory.cs" />
+    <Compile Include="View\Layout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Layout.Designer.cs">
+      <DependentUpon>Layout.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
@@ -218,6 +242,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Product.cs" />
+    <Compile Include="View\Product\IProduct.cs" />
     <Compile Include="View\Product\Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,9 +255,6 @@
     <Compile Include="View\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Layout.resx">
-      <DependentUpon>Layout.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -249,6 +271,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Customer\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\History\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Layout.resx">
+      <DependentUpon>Layout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
