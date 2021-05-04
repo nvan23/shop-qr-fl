@@ -40,43 +40,43 @@ namespace shop_qr.View.Customer
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel26 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.formCustomer = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.textBoxCustomerName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.textBoxCustomerPhone = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.buttonCancelCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonSaveCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBoxSearchCustomer = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.deleteCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonSearchCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.updateProfileCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.exportQR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCustomer = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuLabel26 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.dataGridViewCustomer = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.formCustomer = new System.Windows.Forms.Panel();
+            this.textBoxSearchCustomer = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.buttonSearchCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exportQR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updateProfileCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            this.formCustomer.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.panel18.SuspendLayout();
-            this.formCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,37 +87,16 @@ namespace shop_qr.View.Customer
             this.panel1.Size = new System.Drawing.Size(951, 673);
             this.panel1.TabIndex = 0;
             // 
-            // bunifuLabel4
+            // formCustomer
             // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel4.Location = new System.Drawing.Point(19, 134);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(96, 21);
-            this.bunifuLabel4.TabIndex = 16;
-            this.bunifuLabel4.Text = "Số điện thoại";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel26
-            // 
-            this.bunifuLabel26.AllowParentOverrides = false;
-            this.bunifuLabel26.AutoEllipsis = false;
-            this.bunifuLabel26.CursorType = null;
-            this.bunifuLabel26.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel26.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuLabel26.Location = new System.Drawing.Point(89, 13);
-            this.bunifuLabel26.Name = "bunifuLabel26";
-            this.bunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel26.Size = new System.Drawing.Size(212, 30);
-            this.bunifuLabel26.TabIndex = 4;
-            this.bunifuLabel26.Text = "Thêm/Sửa thành viên";
-            this.bunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.formCustomer.BackColor = System.Drawing.Color.Gainsboro;
+            this.formCustomer.Controls.Add(this.panel15);
+            this.formCustomer.Controls.Add(this.panel17);
+            this.formCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.formCustomer.Location = new System.Drawing.Point(0, 0);
+            this.formCustomer.Name = "formCustomer";
+            this.formCustomer.Size = new System.Drawing.Size(951, 673);
+            this.formCustomer.TabIndex = 8;
             // 
             // panel15
             // 
@@ -471,6 +450,23 @@ namespace shop_qr.View.Customer
             this.buttonSaveCustomer.TextMarginLeft = 0;
             this.buttonSaveCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.buttonSaveCustomer.UseDefaultRadiusAndThickness = true;
+            this.buttonSaveCustomer.Click += new System.EventHandler(this.buttonSaveCustomer_Click);
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.CursorType = null;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel4.Location = new System.Drawing.Point(19, 134);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(96, 21);
+            this.bunifuLabel4.TabIndex = 16;
+            this.bunifuLabel4.Text = "Số điện thoại";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel24
             // 
@@ -487,6 +483,111 @@ namespace shop_qr.View.Customer
             this.bunifuLabel24.Text = "Họ và tên";
             this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel26
+            // 
+            this.bunifuLabel26.AllowParentOverrides = false;
+            this.bunifuLabel26.AutoEllipsis = false;
+            this.bunifuLabel26.CursorType = null;
+            this.bunifuLabel26.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel26.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuLabel26.Location = new System.Drawing.Point(89, 13);
+            this.bunifuLabel26.Name = "bunifuLabel26";
+            this.bunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel26.Size = new System.Drawing.Size(212, 30);
+            this.bunifuLabel26.TabIndex = 4;
+            this.bunifuLabel26.Text = "Thêm/Sửa thành viên";
+            this.bunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Controls.Add(this.dataGridViewCustomer);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(589, 673);
+            this.panel17.TabIndex = 0;
+            // 
+            // dataGridViewCustomer
+            // 
+            this.dataGridViewCustomer.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridViewCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCustomer.ColumnHeadersHeight = 40;
+            this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.customerPhone,
+            this.exportQR,
+            this.updateProfileCustomer,
+            this.deleteCustomer});
+            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCustomer.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.CurrentTheme.Name = null;
+            this.dataGridViewCustomer.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridViewCustomer.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewCustomer.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dataGridViewCustomer.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCustomer.EnableHeadersVisualStyles = false;
+            this.dataGridViewCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dataGridViewCustomer.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridViewCustomer.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dataGridViewCustomer.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 43);
+            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
+            this.dataGridViewCustomer.RowHeadersVisible = false;
+            this.dataGridViewCustomer.RowTemplate.Height = 40;
+            this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewCustomer.Size = new System.Drawing.Size(589, 645);
+            this.dataGridViewCustomer.TabIndex = 5;
+            this.dataGridViewCustomer.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.White;
+            this.panel18.Controls.Add(this.textBoxSearchCustomer);
+            this.panel18.Controls.Add(this.buttonSearchCustomer);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(589, 37);
+            this.panel18.TabIndex = 0;
             // 
             // textBoxSearchCustomer
             // 
@@ -563,12 +664,6 @@ namespace shop_qr.View.Customer
             this.textBoxSearchCustomer.UseSystemPasswordChar = false;
             this.textBoxSearchCustomer.WordWrap = true;
             // 
-            // deleteCustomer
-            // 
-            this.deleteCustomer.FillWeight = 50F;
-            this.deleteCustomer.HeaderText = "";
-            this.deleteCustomer.Name = "deleteCustomer";
-            // 
             // buttonSearchCustomer
             // 
             this.buttonSearchCustomer.AllowAnimations = true;
@@ -641,7 +736,7 @@ namespace shop_qr.View.Customer
             this.buttonSearchCustomer.OnIdleState.BorderThickness = 1;
             this.buttonSearchCustomer.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.buttonSearchCustomer.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.buttonSearchCustomer.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton8.OnIdleState.IconLeftImage")));
+            this.buttonSearchCustomer.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSearchCustomer.OnIdleState.IconLeftImage")));
             this.buttonSearchCustomer.OnIdleState.IconRightImage = null;
             this.buttonSearchCustomer.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonSearchCustomer.OnPressedState.BorderRadius = 1;
@@ -659,11 +754,24 @@ namespace shop_qr.View.Customer
             this.buttonSearchCustomer.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonSearchCustomer.UseDefaultRadiusAndThickness = true;
             // 
-            // updateProfileCustomer
+            // dataGridViewTextBoxColumn5
             // 
-            this.updateProfileCustomer.FillWeight = 50F;
-            this.updateProfileCustomer.HeaderText = "";
-            this.updateProfileCustomer.Name = "updateProfileCustomer";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Mã thành viên";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "FullName";
+            this.dataGridViewTextBoxColumn6.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Họ và tên";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // customerPhone
+            // 
+            this.customerPhone.DataPropertyName = "Phone";
+            this.customerPhone.HeaderText = "Số điện thoại";
+            this.customerPhone.Name = "customerPhone";
             // 
             // exportQR
             // 
@@ -671,122 +779,17 @@ namespace shop_qr.View.Customer
             this.exportQR.HeaderText = "";
             this.exportQR.Name = "exportQR";
             // 
-            // customerPhone
+            // updateProfileCustomer
             // 
-            this.customerPhone.HeaderText = "Số điện thoại";
-            this.customerPhone.Name = "customerPhone";
+            this.updateProfileCustomer.FillWeight = 50F;
+            this.updateProfileCustomer.HeaderText = "";
+            this.updateProfileCustomer.Name = "updateProfileCustomer";
             // 
-            // dataGridViewTextBoxColumn6
+            // deleteCustomer
             // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Họ và tên";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Mã thành viên";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewCustomer
-            // 
-            this.dataGridViewCustomer.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridViewCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridViewCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewCustomer.ColumnHeadersHeight = 40;
-            this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.customerPhone,
-            this.exportQR,
-            this.updateProfileCustomer,
-            this.deleteCustomer});
-            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dataGridViewCustomer.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewCustomer.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dataGridViewCustomer.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.CurrentTheme.Name = null;
-            this.dataGridViewCustomer.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridViewCustomer.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewCustomer.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dataGridViewCustomer.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewCustomer.EnableHeadersVisualStyles = false;
-            this.dataGridViewCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dataGridViewCustomer.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridViewCustomer.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dataGridViewCustomer.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 43);
-            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
-            this.dataGridViewCustomer.RowHeadersVisible = false;
-            this.dataGridViewCustomer.RowTemplate.Height = 40;
-            this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(589, 645);
-            this.dataGridViewCustomer.TabIndex = 5;
-            this.dataGridViewCustomer.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Controls.Add(this.dataGridViewCustomer);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(589, 673);
-            this.panel17.TabIndex = 0;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.Controls.Add(this.textBoxSearchCustomer);
-            this.panel18.Controls.Add(this.buttonSearchCustomer);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(589, 37);
-            this.panel18.TabIndex = 0;
-            // 
-            // formCustomer
-            // 
-            this.formCustomer.BackColor = System.Drawing.Color.Gainsboro;
-            this.formCustomer.Controls.Add(this.panel15);
-            this.formCustomer.Controls.Add(this.panel17);
-            this.formCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formCustomer.Location = new System.Drawing.Point(0, 0);
-            this.formCustomer.Name = "formCustomer";
-            this.formCustomer.Size = new System.Drawing.Size(951, 673);
-            this.formCustomer.TabIndex = 8;
+            this.deleteCustomer.FillWeight = 50F;
+            this.deleteCustomer.HeaderText = "";
+            this.deleteCustomer.Name = "deleteCustomer";
             // 
             // Customer
             // 
@@ -798,13 +801,13 @@ namespace shop_qr.View.Customer
             this.Name = "Customer";
             this.Text = "Customer";
             this.panel1.ResumeLayout(false);
+            this.formCustomer.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
             this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
             this.panel18.ResumeLayout(false);
-            this.formCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -824,14 +827,14 @@ namespace shop_qr.View.Customer
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel26;
         private System.Windows.Forms.Panel panel17;
         private Bunifu.UI.WinForms.BunifuDataGridView dataGridViewCustomer;
+        private System.Windows.Forms.Panel panel18;
+        private Bunifu.UI.WinForms.BunifuTextBox textBoxSearchCustomer;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSearchCustomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn exportQR;
         private System.Windows.Forms.DataGridViewTextBoxColumn updateProfileCustomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn deleteCustomer;
-        private System.Windows.Forms.Panel panel18;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxSearchCustomer;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSearchCustomer;
     }
 }
