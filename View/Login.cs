@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace shop_qr.View
 {
-    public partial class Login : Form
+    public partial class Login : Form, ILogin
     {
+        public string Username { get => textBoxUsername.Text; set => textBoxUsername.Text = value.ToString(); }
+        public string Password { get => textBoxUsername.Text; set => textBoxPassword.Text = value.ToString(); }
+
         public Login()
         {
             InitializeComponent();
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            
+            Username = "nvan23";
+            Password = "123";
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)

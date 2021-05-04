@@ -279,7 +279,7 @@ namespace shop_qr.View
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPassword.OnIdleState = stateProperties4;
             this.textBoxPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.textBoxPassword.PasswordChar = '\0';
+            this.textBoxPassword.PasswordChar = '●';
             this.textBoxPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBoxPassword.PlaceholderText = "Ví dụ: gear123";
             this.textBoxPassword.ReadOnly = false;

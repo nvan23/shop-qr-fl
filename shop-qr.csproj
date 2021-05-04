@@ -229,6 +229,7 @@
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
     <Compile Include="View\History\IHistory.cs" />
+    <Compile Include="View\ILogin.cs" />
     <Compile Include="View\Layout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,10 +324,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="Shop.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Shop_log.ldf">
-      <DependentUpon>Shop.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\buy_32px1.png" />
