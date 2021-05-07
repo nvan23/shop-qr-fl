@@ -1,6 +1,6 @@
 # Shop QR App 2021
 
-Reference for setting the environment for the application to run QR Scanner [Windows Forms: QR Code Scanner using Camera in C#]().
+Reference for setting the environment for the application to run QR Scanner [Windows Forms: QR Code Scanner using Camera in C#](https://foxlearn.com/windows-forms/qr-code-scanner-using-camera-in-csharp-380.html).
 
 ## Usage
 
