@@ -200,6 +200,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Presenter\PProduct.cs" />
     <Compile Include="Presenter\PCustomer.cs" />
     <Compile Include="Product.Designer.cs">
       <AutoGen>True</AutoGen>

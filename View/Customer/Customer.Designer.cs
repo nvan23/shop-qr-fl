@@ -359,6 +359,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.TextMarginLeft = 0;
             this.buttonCancelCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.buttonCancelCustomer.UseDefaultRadiusAndThickness = true;
+            this.buttonCancelCustomer.Click += new System.EventHandler(this.buttonCancelCustomer_Click);
             // 
             // buttonSaveCustomer
             // 
@@ -571,12 +572,14 @@ namespace shop_qr.View.Customer
             this.dataGridViewCustomer.HeaderForeColor = System.Drawing.Color.White;
             this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 43);
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
+            this.dataGridViewCustomer.ReadOnly = true;
             this.dataGridViewCustomer.RowHeadersVisible = false;
             this.dataGridViewCustomer.RowTemplate.Height = 40;
             this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCustomer.Size = new System.Drawing.Size(589, 645);
             this.dataGridViewCustomer.TabIndex = 5;
             this.dataGridViewCustomer.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridViewCustomer.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCustomer_CellClick);
             // 
             // panel18
             // 
@@ -759,6 +762,7 @@ namespace shop_qr.View.Customer
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn5.HeaderText = "Mã thành viên";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -766,30 +770,35 @@ namespace shop_qr.View.Customer
             this.dataGridViewTextBoxColumn6.FillWeight = 150F;
             this.dataGridViewTextBoxColumn6.HeaderText = "Họ và tên";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // customerPhone
             // 
             this.customerPhone.DataPropertyName = "Phone";
             this.customerPhone.HeaderText = "Số điện thoại";
             this.customerPhone.Name = "customerPhone";
+            this.customerPhone.ReadOnly = true;
             // 
             // exportQR
             // 
             this.exportQR.FillWeight = 50F;
             this.exportQR.HeaderText = "";
             this.exportQR.Name = "exportQR";
+            this.exportQR.ReadOnly = true;
             // 
             // updateProfileCustomer
             // 
             this.updateProfileCustomer.FillWeight = 50F;
             this.updateProfileCustomer.HeaderText = "";
             this.updateProfileCustomer.Name = "updateProfileCustomer";
+            this.updateProfileCustomer.ReadOnly = true;
             // 
             // deleteCustomer
             // 
             this.deleteCustomer.FillWeight = 50F;
             this.deleteCustomer.HeaderText = "";
             this.deleteCustomer.Name = "deleteCustomer";
+            this.deleteCustomer.ReadOnly = true;
             // 
             // Customer
             // 

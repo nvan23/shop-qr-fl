@@ -13,6 +13,7 @@ namespace shop_qr.View.Customer
 {
     public partial class Customer : Form, ICustomer
     {
+        private string SelectedId;
         public Customer()
         {
             InitializeComponent();
@@ -24,12 +25,26 @@ namespace shop_qr.View.Customer
 
         private void buttonSaveCustomer_Click(object sender, EventArgs e)
         {
-            PCustomer presenter = new PCustomer(this);
-            Model.Customer customer = new Model.Customer();
-            customer.FullName = FullName;
-            customer.Phone = Phone;
-            presenter.Create(customer);
+            PCustomer presenter = new PCustomer(this);  
+            presenter.Create();
             presenter.Read();
+        }
+
+        private void buttonCancelCustomer_Click(object sender, EventArgs e)
+        {
+            this.FullName = "";
+            this.Phone = "";
+        }
+
+
+        private void dataGridViewCustomer_CellClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                Model.Customer row = dataGridViewCustomer.Rows[e.RowIndex].DataBoundItem as Model.Customer;
+                this.FullName = row.FullName;
+                this.Phone = row.Phone;
+            }
         }
     }
 }

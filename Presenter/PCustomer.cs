@@ -11,8 +11,11 @@ namespace shop_qr.Presenter
             this.view = view;
         }
 
-        public void Create(Model.Customer customer)
+        public void Create()
         {
+            Model.Customer customer = new Model.Customer();
+            customer.FullName = view.FullName;
+            customer.Phone = view.Phone;
             Model.MCustomer.Create(customer);
         }
 
