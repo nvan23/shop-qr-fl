@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace shop_qr.Model
 {
-    class MMManager
+    class MManager
     {
         public static void Create(Manager user)
         {

@@ -195,7 +195,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Model\MMManager.cs" />
+    <Compile Include="Model\MManager.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MBillDetail.cs" />
     <Compile Include="Model\MProduct.cs" />
