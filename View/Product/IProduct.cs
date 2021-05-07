@@ -5,8 +5,10 @@ namespace shop_qr.View
 {
     public interface IProduct
     {
+        string Id { get; set; }
+        string Search { get; set; }
         string Name { get; set; }
-        int Price { get; set; }
+        string Price { get; set; }
         List<Model.Product> Products { get; set; }
     }
 }

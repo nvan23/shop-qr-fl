@@ -197,7 +197,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Model\MMManager.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MBillDetail.cs" />
     <Compile Include="Model\MProduct.cs" />
@@ -342,6 +341,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Shop.mdf</DependentUpon>
     </Content>
+    <Content Include="sql.txt" />
     <None Include="Resources\buy_32px1.png" />
     <None Include="Resources\buy_32px.png" />
     <None Include="Resources\product_documents_32px.png" />
