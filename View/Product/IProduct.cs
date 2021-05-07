@@ -7,7 +7,6 @@ namespace shop_qr.View
     {
         string Name { get; set; }
         int Price { get; set; }
-        int Quantity { get; set; }
         List<Model.Product> Products { get; set; }
     }
 }

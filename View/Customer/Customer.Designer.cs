@@ -365,6 +365,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.TextMarginLeft = 0;
             this.buttonCancelCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.buttonCancelCustomer.UseDefaultRadiusAndThickness = true;
+            this.buttonCancelCustomer.Click += new System.EventHandler(this.buttonCancelCustomer_Click);
             // 
             // buttonSaveCustomer
             // 
@@ -577,12 +578,14 @@ namespace shop_qr.View.Customer
             this.dataGridViewCustomer.HeaderForeColor = System.Drawing.Color.White;
             this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 43);
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
+            this.dataGridViewCustomer.ReadOnly = true;
             this.dataGridViewCustomer.RowHeadersVisible = false;
             this.dataGridViewCustomer.RowTemplate.Height = 40;
             this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCustomer.Size = new System.Drawing.Size(589, 645);
             this.dataGridViewCustomer.TabIndex = 5;
             this.dataGridViewCustomer.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridViewCustomer.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCustomer_CellClick);
             // 
             // dataGridViewTextBoxColumn5
             // 

@@ -38,38 +38,31 @@ namespace shop_qr.View.Product
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuLabel31 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panelProduct = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBoxProductName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.textBoxProductPrice = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.textBoxProductQuantity = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.buttonCancelProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonSaveProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel8Left = new System.Windows.Forms.Panel();
             this.dataGridViewProduct = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updateProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,54 +86,6 @@ namespace shop_qr.View.Product
             this.panel1.Size = new System.Drawing.Size(951, 673);
             this.panel1.TabIndex = 0;
             // 
-            // bunifuLabel31
-            // 
-            this.bunifuLabel31.AllowParentOverrides = false;
-            this.bunifuLabel31.AutoEllipsis = false;
-            this.bunifuLabel31.CursorType = null;
-            this.bunifuLabel31.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel31.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel31.Location = new System.Drawing.Point(19, 219);
-            this.bunifuLabel31.Name = "bunifuLabel31";
-            this.bunifuLabel31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel31.Size = new System.Drawing.Size(66, 21);
-            this.bunifuLabel31.TabIndex = 19;
-            this.bunifuLabel31.Text = "Số lượng";
-            this.bunifuLabel31.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel31.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel25
-            // 
-            this.bunifuLabel25.AllowParentOverrides = false;
-            this.bunifuLabel25.AutoEllipsis = false;
-            this.bunifuLabel25.CursorType = null;
-            this.bunifuLabel25.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel25.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel25.Location = new System.Drawing.Point(19, 57);
-            this.bunifuLabel25.Name = "bunifuLabel25";
-            this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel25.Size = new System.Drawing.Size(100, 21);
-            this.bunifuLabel25.TabIndex = 12;
-            this.bunifuLabel25.Text = "Tên sản phẩm";
-            this.bunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel23
-            // 
-            this.bunifuLabel23.AllowParentOverrides = false;
-            this.bunifuLabel23.AutoEllipsis = false;
-            this.bunifuLabel23.CursorType = null;
-            this.bunifuLabel23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel23.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuLabel23.Location = new System.Drawing.Point(89, 13);
-            this.bunifuLabel23.Name = "bunifuLabel23";
-            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel23.Size = new System.Drawing.Size(202, 30);
-            this.bunifuLabel23.TabIndex = 4;
-            this.bunifuLabel23.Text = "Thêm/Sửa sản phẩm";
-            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // panelProduct
             // 
             this.panelProduct.BackColor = System.Drawing.Color.Gainsboro;
@@ -157,9 +102,7 @@ namespace shop_qr.View.Product
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.Controls.Add(this.textBoxProductName);
             this.panel9.Controls.Add(this.textBoxProductPrice);
-            this.panel9.Controls.Add(this.textBoxProductQuantity);
             this.panel9.Controls.Add(this.panel8);
-            this.panel9.Controls.Add(this.bunifuLabel31);
             this.panel9.Controls.Add(this.bunifuLabel27);
             this.panel9.Controls.Add(this.bunifuLabel25);
             this.panel9.Controls.Add(this.bunifuLabel23);
@@ -316,80 +259,6 @@ namespace shop_qr.View.Product
             this.textBoxProductPrice.TextPlaceholder = "Ví dụ: 2540000";
             this.textBoxProductPrice.UseSystemPasswordChar = false;
             this.textBoxProductPrice.WordWrap = true;
-            // 
-            // textBoxProductQuantity
-            // 
-            this.textBoxProductQuantity.AcceptsReturn = false;
-            this.textBoxProductQuantity.AcceptsTab = false;
-            this.textBoxProductQuantity.AnimationSpeed = 200;
-            this.textBoxProductQuantity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxProductQuantity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxProductQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxProductQuantity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxProductQuantity.BackgroundImage")));
-            this.textBoxProductQuantity.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxProductQuantity.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxProductQuantity.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxProductQuantity.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxProductQuantity.BorderRadius = 1;
-            this.textBoxProductQuantity.BorderThickness = 1;
-            this.textBoxProductQuantity.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxProductQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxProductQuantity.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxProductQuantity.DefaultText = "";
-            this.textBoxProductQuantity.FillColor = System.Drawing.Color.White;
-            this.textBoxProductQuantity.HideSelection = true;
-            this.textBoxProductQuantity.IconLeft = null;
-            this.textBoxProductQuantity.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxProductQuantity.IconPadding = 10;
-            this.textBoxProductQuantity.IconRight = null;
-            this.textBoxProductQuantity.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxProductQuantity.Lines = new string[0];
-            this.textBoxProductQuantity.Location = new System.Drawing.Point(10, 246);
-            this.textBoxProductQuantity.MaxLength = 32767;
-            this.textBoxProductQuantity.MinimumSize = new System.Drawing.Size(1, 1);
-            this.textBoxProductQuantity.Modified = false;
-            this.textBoxProductQuantity.Multiline = false;
-            this.textBoxProductQuantity.Name = "textBoxProductQuantity";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxProductQuantity.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxProductQuantity.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxProductQuantity.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxProductQuantity.OnIdleState = stateProperties12;
-            this.textBoxProductQuantity.Padding = new System.Windows.Forms.Padding(3);
-            this.textBoxProductQuantity.PasswordChar = '\0';
-            this.textBoxProductQuantity.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.textBoxProductQuantity.PlaceholderText = "Nhập số lượng (mặc dịnh 1)";
-            this.textBoxProductQuantity.ReadOnly = false;
-            this.textBoxProductQuantity.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxProductQuantity.SelectedText = "";
-            this.textBoxProductQuantity.SelectionLength = 0;
-            this.textBoxProductQuantity.SelectionStart = 0;
-            this.textBoxProductQuantity.ShortcutsEnabled = true;
-            this.textBoxProductQuantity.Size = new System.Drawing.Size(348, 42);
-            this.textBoxProductQuantity.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.textBoxProductQuantity.TabIndex = 27;
-            this.textBoxProductQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxProductQuantity.TextMarginBottom = 0;
-            this.textBoxProductQuantity.TextMarginLeft = 3;
-            this.textBoxProductQuantity.TextMarginTop = 0;
-            this.textBoxProductQuantity.TextPlaceholder = "Nhập số lượng (mặc dịnh 1)";
-            this.textBoxProductQuantity.UseSystemPasswordChar = false;
-            this.textBoxProductQuantity.WordWrap = true;
             // 
             // panel8
             // 
@@ -580,6 +449,7 @@ namespace shop_qr.View.Product
             this.buttonSaveProduct.TextMarginLeft = 0;
             this.buttonSaveProduct.TextPadding = new System.Windows.Forms.Padding(0);
             this.buttonSaveProduct.UseDefaultRadiusAndThickness = true;
+            this.buttonSaveProduct.Click += new System.EventHandler(this.buttonSaveProduct_Click);
             // 
             // bunifuLabel27
             // 
@@ -596,6 +466,38 @@ namespace shop_qr.View.Product
             this.bunifuLabel27.Text = "Giá";
             this.bunifuLabel27.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel27.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel25
+            // 
+            this.bunifuLabel25.AllowParentOverrides = false;
+            this.bunifuLabel25.AutoEllipsis = false;
+            this.bunifuLabel25.CursorType = null;
+            this.bunifuLabel25.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel25.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel25.Location = new System.Drawing.Point(19, 57);
+            this.bunifuLabel25.Name = "bunifuLabel25";
+            this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel25.Size = new System.Drawing.Size(100, 21);
+            this.bunifuLabel25.TabIndex = 12;
+            this.bunifuLabel25.Text = "Tên sản phẩm";
+            this.bunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel23
+            // 
+            this.bunifuLabel23.AllowParentOverrides = false;
+            this.bunifuLabel23.AutoEllipsis = false;
+            this.bunifuLabel23.CursorType = null;
+            this.bunifuLabel23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel23.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuLabel23.Location = new System.Drawing.Point(89, 13);
+            this.bunifuLabel23.Name = "bunifuLabel23";
+            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel23.Size = new System.Drawing.Size(202, 30);
+            this.bunifuLabel23.TabIndex = 4;
+            this.bunifuLabel23.Text = "Thêm/Sửa sản phẩm";
+            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // panel8Left
             // 
@@ -631,7 +533,6 @@ namespace shop_qr.View.Product
             this.dataGridViewProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.updateProduct,
             this.deleteProduct});
@@ -674,27 +575,24 @@ namespace shop_qr.View.Product
             this.dataGridViewProduct.Size = new System.Drawing.Size(589, 645);
             this.dataGridViewProduct.TabIndex = 5;
             this.dataGridViewProduct.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridViewProduct.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewProduct_CellMouseClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Mã SP";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
             this.dataGridViewTextBoxColumn2.FillWeight = 150F;
             this.dataGridViewTextBoxColumn2.HeaderText = "Tên SP";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Số lượng";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
             // dataGridViewTextBoxColumn4
             // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Price";
             this.dataGridViewTextBoxColumn4.HeaderText = "Giá";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
@@ -755,26 +653,26 @@ namespace shop_qr.View.Product
             this.textBoxSearchProduct.Modified = false;
             this.textBoxSearchProduct.Multiline = false;
             this.textBoxSearchProduct.Name = "textBoxSearchProduct";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProduct.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxSearchProduct.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProduct.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProduct.OnIdleState = stateProperties16;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProduct.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxSearchProduct.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProduct.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProduct.OnIdleState = stateProperties12;
             this.textBoxSearchProduct.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxSearchProduct.PasswordChar = '\0';
             this.textBoxSearchProduct.PlaceholderForeColor = System.Drawing.Color.DimGray;
@@ -868,7 +766,7 @@ namespace shop_qr.View.Product
             this.buttonSearchProduct.OnIdleState.BorderThickness = 1;
             this.buttonSearchProduct.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.buttonSearchProduct.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.buttonSearchProduct.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton3.OnIdleState.IconLeftImage")));
+            this.buttonSearchProduct.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSearchProduct.OnIdleState.IconLeftImage")));
             this.buttonSearchProduct.OnIdleState.IconRightImage = null;
             this.buttonSearchProduct.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonSearchProduct.OnPressedState.BorderRadius = 1;
@@ -914,24 +812,21 @@ namespace shop_qr.View.Product
         private System.Windows.Forms.Panel panel9;
         private Bunifu.UI.WinForms.BunifuTextBox textBoxProductName;
         private Bunifu.UI.WinForms.BunifuTextBox textBoxProductPrice;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxProductQuantity;
         private System.Windows.Forms.Panel panel8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonCancelProduct;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSaveProduct;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel31;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel27;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel25;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel23;
         private System.Windows.Forms.Panel panel8Left;
         private Bunifu.UI.WinForms.BunifuDataGridView dataGridViewProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn updateProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn deleteProduct;
         private System.Windows.Forms.Panel panel10;
         private Bunifu.UI.WinForms.BunifuTextBox textBoxSearchProduct;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSearchProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updateProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deleteProduct;
     }
 }

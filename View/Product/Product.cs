@@ -1,4 +1,5 @@
-﻿using System;
+﻿using shop_qr.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,18 @@ namespace shop_qr.View.Product
         }
         public string Name { get => textBoxProductName.Text; set => textBoxProductName.Text = value.ToString(); }
         public int Price { get => Int32.Parse(textBoxProductPrice.Text); set => textBoxProductPrice.Text = value.ToString(); }
-        public int Quantity { get => Int32.Parse(textBoxProductQuantity.Text); set => textBoxProductQuantity.Text = value.ToString(); }
         public List<Model.Product> Products { get => (List<Model.Product>)dataGridViewProduct.DataSource; set => dataGridViewProduct.DataSource = value; }
+
+        private void buttonSaveProduct_Click(object sender, EventArgs e)
+        {
+            PProduct presenter = new PProduct(this);
+            presenter.Create();
+            presenter.Read();
+        }
+
+        private void dataGridViewProduct_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
     }
 }
