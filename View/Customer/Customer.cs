@@ -66,5 +66,10 @@ namespace shop_qr.View.Customer
         {
             presenter.Search();
         }
+
+        private void panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

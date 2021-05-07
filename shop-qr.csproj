@@ -201,6 +201,7 @@
     <Compile Include="Model\MBillDetail.cs" />
     <Compile Include="Model\MProduct.cs" />
     <Compile Include="Model\MCustomer.cs" />
+    <Compile Include="Presenter\PBill.cs" />
     <Compile Include="Presenter\PProduct.cs" />
     <Compile Include="Presenter\PCustomer.cs" />
     <Compile Include="Product.Designer.cs">

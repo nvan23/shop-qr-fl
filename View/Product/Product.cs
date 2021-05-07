@@ -19,7 +19,7 @@ namespace shop_qr.View.Product
             InitializeComponent();
             presenter = new PProduct(this);
         }
-        public string Id { get; set; }
+        public string Id { get =>labelProductID.Text; set => labelProductID.Text = value.ToString(); }
         public string Search { get => textBoxSearchProduct.Text; set => textBoxSearchProduct.Text = value.ToString(); }
         public string Name { get => textBoxProductName.Text; set => textBoxProductName.Text = value.ToString(); }
         public string Price { get => textBoxProductPrice.Text; set => textBoxProductPrice.Text = value.ToString(); }
@@ -57,5 +57,18 @@ namespace shop_qr.View.Product
                 this.Id = row.Id.ToString();
             }
         }
+
+        private void buttonSearchProduct_Click(object sender, EventArgs e)
+        {
+            presenter.Search();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            presenter.Delete();
+            this.Id = "";
+            presenter.Read();
+        }
     }
 }
+    

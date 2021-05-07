@@ -8,15 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using shop_qr.Model;
+using shop_qr.Presenter;
 using shop_qr.View;
 
 namespace shop_qr.View.Bill
 {
     public partial class formBill : Form, IBill
     {
+        private PBill presenter;
         public formBill()
         {
             InitializeComponent();
+            presenter = new PBill(this);
+            presenter.ReadProduct();
+
         }
 
         public int Total { get => Int32.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
