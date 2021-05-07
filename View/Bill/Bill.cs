@@ -28,5 +28,10 @@ namespace shop_qr.View.Bill
         public string FullName { get => labelCustomerNameInBill.Text; set => labelCustomerNameInBill.Text = value.ToString(); }
         public string Phone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
         public List<Model.Product> Products { get => (List<Model.Product>)dataGridViewProductInBill.DataSource; set => dataGridViewProductInBill.DataSource = value; }
+
+        private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
+        {
+            new View.QRScanner.formQRScanner().ShowDialog();
+        }
     }
 }

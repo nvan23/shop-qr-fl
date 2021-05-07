@@ -162,7 +162,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -195,7 +197,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Model\MManager.cs" />
+    <Compile Include="Model\MMManager.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MBillDetail.cs" />
     <Compile Include="Model\MProduct.cs" />
@@ -251,6 +253,12 @@
     <Compile Include="View\Product\Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\QRScanner\QRScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\QRScanner\QRScanner.Designer.cs">
+      <DependentUpon>QRScanner.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Product\Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QRScanner\QRScanner.resx">
+      <DependentUpon>QRScanner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
