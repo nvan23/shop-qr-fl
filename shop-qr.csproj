@@ -332,13 +332,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="Shop.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Shop_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Shop.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\buy_32px1.png" />
     <None Include="Resources\buy_32px.png" />
     <None Include="Resources\product_documents_32px.png" />
