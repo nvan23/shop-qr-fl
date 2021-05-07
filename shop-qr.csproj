@@ -190,16 +190,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\MMManager.cs" />
-    <Compile Include="Model\MBill.cs" />
-    <Compile Include="Model\MBillDetail.cs" />
-    <Compile Include="Model\MProduct.cs" />
-    <Compile Include="Model\MCustomer.cs" />
     <Compile Include="Model\DataShop.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Model\MMManager.cs" />
+    <Compile Include="Model\MBill.cs" />
+    <Compile Include="Model\MBillDetail.cs" />
+    <Compile Include="Model\MProduct.cs" />
+    <Compile Include="Model\MCustomer.cs" />
     <Compile Include="Presenter\PProduct.cs" />
     <Compile Include="Presenter\PCustomer.cs" />
     <Compile Include="Product.Designer.cs">
@@ -326,6 +326,10 @@
     <Content Include=".gitignore" />
     <Content Include="Shop.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Shop_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Shop.mdf</DependentUpon>
     </Content>
     <None Include="Resources\buy_32px1.png" />
     <None Include="Resources\buy_32px.png" />

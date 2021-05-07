@@ -8,17 +8,17 @@ namespace shop_qr.Model
 {
     class MMManager
     {
-        public static void Create(MManager user)
+        public static void Create(Manager user)
         {
             DataShopDataContext db = new DataShopDataContext();
             db.Managers.InsertOnSubmit(user);
             db.SubmitChanges();
 
         }
-        public static MManager Verify(MManager user)
+        public static Manager Verify(Manager user)
         {
             DataShopDataContext db = new DataShopDataContext();
-            MManager _user =  db.Managers.FirstOrDefault(u => u.Email.Equals(user.Email) && u.Password.Equals(user.Password)) ;
+            Manager _user =  db.Managers.FirstOrDefault(u => u.Email.Equals(user.Email) && u.Password.Equals(user.Password)) ;
             return _user;
 
         }
