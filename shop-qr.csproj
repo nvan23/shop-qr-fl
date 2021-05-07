@@ -253,6 +253,7 @@
     <Compile Include="View\Product\Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\QRScanner\IQRScanner.cs" />
     <Compile Include="View\QRScanner\QRScanner.cs">
       <SubType>Form</SubType>
     </Compile>
