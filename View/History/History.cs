@@ -23,5 +23,10 @@ namespace shop_qr.View
         public string CustomerPhone { get => labelCustomerPhoneInHistory.Text; set => labelCustomerPhoneInHistory.Text = value.ToString(); }
         public List<Model.Bill> Bills { get => (List<Model.Bill>)dataGridViewBillHistory.DataSource; set => dataGridViewBillHistory.DataSource = value; }
         public List<Model.BillDetail> Details { get => (List<Model.BillDetail>)dataGridViewBillDetailHistory.DataSource; set => dataGridViewBillDetailHistory.DataSource = value; }
+
+        private void buttonGetCustomerInfoInHistory_Click(object sender, EventArgs e)
+        {
+            new View.QRScanner.formQRScanner().ShowDialog();
+        }
     }
 }
