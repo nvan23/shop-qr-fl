@@ -1,0 +1,35 @@
+﻿
+create table Manager (
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	FullName varchar(50),
+	Email varchar(100),
+	Password varchar(100),
+	Phone varchar(20),
+)
+
+create table Customer (
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	FullName varchar(50),
+	Phone varchar(20),
+	)
+create table Bill (
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	CustomerId int,
+	CreatedAt datetime DEFAULT (GETDATE()),
+	foreign key(CustomerId) references Customer(Id),
+)
+
+create table Product (
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	Name varchar(100),
+	Price money,
+)
+
+create table BillDetail (
+	BillId int,
+	ProductId int,
+	ProductPrice money,
+	Quantity int,
+	foreign key(BillId) references Bill(Id),
+	foreign key(ProductId) references Product(Id),
+)

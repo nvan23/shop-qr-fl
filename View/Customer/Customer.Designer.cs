@@ -29,6 +29,7 @@ namespace shop_qr.View.Customer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -47,10 +48,12 @@ namespace shop_qr.View.Customer
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.panel1 = new System.Windows.Forms.Panel();
             this.formCustomer = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.labelCustomerId = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.textBoxCustomerName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.textBoxCustomerPhone = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -70,9 +73,6 @@ namespace shop_qr.View.Customer
             this.panel18 = new System.Windows.Forms.Panel();
             this.textBoxSearchCustomer = new Bunifu.UI.WinForms.BunifuTextBox();
             this.buttonSearchCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.labelCustomerIDInBill = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1.SuspendLayout();
             this.formCustomer.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -104,7 +104,7 @@ namespace shop_qr.View.Customer
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.labelCustomerIDInBill);
+            this.panel15.Controls.Add(this.labelCustomerId);
             this.panel15.Controls.Add(this.bunifuSeparator2);
             this.panel15.Controls.Add(this.bunifuLabel5);
             this.panel15.Controls.Add(this.textBoxCustomerName);
@@ -118,6 +118,52 @@ namespace shop_qr.View.Customer
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(362, 673);
             this.panel15.TabIndex = 1;
+            // 
+            // labelCustomerId
+            // 
+            this.labelCustomerId.AllowParentOverrides = false;
+            this.labelCustomerId.AutoEllipsis = false;
+            this.labelCustomerId.CursorType = null;
+            this.labelCustomerId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCustomerId.ForeColor = System.Drawing.Color.DimGray;
+            this.labelCustomerId.Location = new System.Drawing.Point(49, 80);
+            this.labelCustomerId.Name = "labelCustomerId";
+            this.labelCustomerId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelCustomerId.Size = new System.Drawing.Size(0, 0);
+            this.labelCustomerId.TabIndex = 32;
+            this.labelCustomerId.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelCustomerId.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
+            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.Silver;
+            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(10, 98);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator2.Size = new System.Drawing.Size(343, 14);
+            this.bunifuSeparator2.TabIndex = 31;
+            // 
+            // bunifuLabel5
+            // 
+            this.bunifuLabel5.AllowParentOverrides = false;
+            this.bunifuLabel5.AutoEllipsis = false;
+            this.bunifuLabel5.CursorType = null;
+            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel5.Location = new System.Drawing.Point(19, 80);
+            this.bunifuLabel5.Name = "bunifuLabel5";
+            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel5.Size = new System.Drawing.Size(20, 21);
+            this.bunifuLabel5.TabIndex = 30;
+            this.bunifuLabel5.Text = "ID:";
+            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // textBoxCustomerName
             // 
@@ -592,6 +638,7 @@ namespace shop_qr.View.Customer
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn5.HeaderText = "Mã thành viên";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -599,30 +646,35 @@ namespace shop_qr.View.Customer
             this.dataGridViewTextBoxColumn6.FillWeight = 150F;
             this.dataGridViewTextBoxColumn6.HeaderText = "Họ và tên";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // customerPhone
             // 
             this.customerPhone.DataPropertyName = "Phone";
             this.customerPhone.HeaderText = "Số điện thoại";
             this.customerPhone.Name = "customerPhone";
+            this.customerPhone.ReadOnly = true;
             // 
             // exportQR
             // 
             this.exportQR.FillWeight = 50F;
             this.exportQR.HeaderText = "";
             this.exportQR.Name = "exportQR";
+            this.exportQR.ReadOnly = true;
             // 
             // updateProfileCustomer
             // 
             this.updateProfileCustomer.FillWeight = 50F;
             this.updateProfileCustomer.HeaderText = "";
             this.updateProfileCustomer.Name = "updateProfileCustomer";
+            this.updateProfileCustomer.ReadOnly = true;
             // 
             // deleteCustomer
             // 
             this.deleteCustomer.FillWeight = 50F;
             this.deleteCustomer.HeaderText = "";
             this.deleteCustomer.Name = "deleteCustomer";
+            this.deleteCustomer.ReadOnly = true;
             // 
             // panel18
             // 
@@ -799,53 +851,7 @@ namespace shop_qr.View.Customer
             this.buttonSearchCustomer.TextMarginLeft = 0;
             this.buttonSearchCustomer.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonSearchCustomer.UseDefaultRadiusAndThickness = true;
-            // 
-            // labelCustomerIDInBill
-            // 
-            this.labelCustomerIDInBill.AllowParentOverrides = false;
-            this.labelCustomerIDInBill.AutoEllipsis = false;
-            this.labelCustomerIDInBill.CursorType = null;
-            this.labelCustomerIDInBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCustomerIDInBill.ForeColor = System.Drawing.Color.DimGray;
-            this.labelCustomerIDInBill.Location = new System.Drawing.Point(49, 80);
-            this.labelCustomerIDInBill.Name = "labelCustomerIDInBill";
-            this.labelCustomerIDInBill.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelCustomerIDInBill.Size = new System.Drawing.Size(56, 21);
-            this.labelCustomerIDInBill.TabIndex = 32;
-            this.labelCustomerIDInBill.Text = "ABC123";
-            this.labelCustomerIDInBill.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelCustomerIDInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
-            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.Silver;
-            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(10, 98);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator2.Size = new System.Drawing.Size(343, 14);
-            this.bunifuSeparator2.TabIndex = 31;
-            // 
-            // bunifuLabel5
-            // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel5.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel5.Location = new System.Drawing.Point(19, 80);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(20, 21);
-            this.bunifuLabel5.TabIndex = 30;
-            this.bunifuLabel5.Text = "ID:";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.buttonSearchCustomer.Click += new System.EventHandler(this.buttonSearchCustomer_Click);
             // 
             // Customer
             // 
@@ -892,7 +898,7 @@ namespace shop_qr.View.Customer
         private System.Windows.Forms.DataGridViewTextBoxColumn exportQR;
         private System.Windows.Forms.DataGridViewTextBoxColumn updateProfileCustomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn deleteCustomer;
-        private Bunifu.UI.WinForms.BunifuLabel labelCustomerIDInBill;
+        private Bunifu.UI.WinForms.BunifuLabel labelCustomerId;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
     }

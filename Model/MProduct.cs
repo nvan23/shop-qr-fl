@@ -38,5 +38,23 @@ namespace shop_qr.Model
             db.Products.DeleteOnSubmit(_product);
             db.SubmitChanges();
         }
+        public static List<Product> Search(string key)
+        {
+            List<Product> list = new List<Product>();
+            DataShopDataContext db = new DataShopDataContext();
+            if (key.Length > 0)
+            {
+                list = db.Products.Where<Product>(e =>
+                    e.Name.Contains(key) ||
+                    e.Price.ToString().Contains(key)
+                ).ToList<Product>();
+            }
+            else
+            {
+                list = db.Products.ToList<Product>();
+
+            }
+            return list;
+        }
     }
 }
