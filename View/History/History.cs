@@ -52,22 +52,9 @@ namespace shop_qr.View
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
+            pictureBoxQRScannerInHistory.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
-
-        private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
-        {
-            panelCustomerProfile.Visible = false;
-            panelQRScannerInBill.Visible = true;
-
-            timerPickerInHistory.Enabled = true;
-
-            videoCaptureDeviceInHistory = new VideoCaptureDevice(filterInfoCollectionInHistory[comboBoxQRScannerInBill.SelectedIndex].MonikerString);
-            videoCaptureDeviceInHistory.NewFrame += FinalFrame_NewFrame;
-            videoCaptureDeviceInHistory.Start();
-            timerPickerInHistory.Start();
-        }
 
         private void History_Load(object sender, EventArgs e)
         {
@@ -81,7 +68,7 @@ namespace shop_qr.View
         private void timerPickerInHistory_Tick(object sender, EventArgs e)
         {
             BarcodeReader Reader = new BarcodeReader();
-            Bitmap bitmap = (Bitmap)pictureBoxQRScannerInBill.Image;
+            Bitmap bitmap = (Bitmap)pictureBoxQRScannerInHistory.Image;
             if (bitmap == null)
             {
                 return;
@@ -91,10 +78,35 @@ namespace shop_qr.View
             {
                 labelCustomerNameInHistory.Text = result.ToString();
                 videoCaptureDeviceInHistory.Stop();
-                panelQRScannerInBill.Visible = false;
-                panelCustomerProfile.Visible = true;
+                panelQRScannerInHistory.Visible = false;
+                panelCustomerProfileInHistory.Visible = true;
             }
 
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            videoCaptureDeviceInHistory.Stop();
+            panelQRScannerInHistory.Visible = false;
+            panelCustomerProfileInHistory.Visible = true;
+        }
+
+        private void panelCustomerProfile_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonGetCustomerInfoInHistory_Click_1(object sender, EventArgs e)
+        {
+            panelCustomerProfileInHistory.Visible = false;
+            panelQRScannerInHistory.Visible = true;
+
+            timerPickerInHistory.Enabled = true;
+
+            videoCaptureDeviceInHistory = new VideoCaptureDevice(filterInfoCollectionInHistory[comboBoxQRScannerInBill.SelectedIndex].MonikerString);
+            videoCaptureDeviceInHistory.NewFrame += FinalFrame_NewFrame;
+            videoCaptureDeviceInHistory.Start();
+            timerPickerInHistory.Start();
         }
     }
 }

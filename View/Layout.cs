@@ -26,6 +26,7 @@ namespace shop_qr.View
         private void buttonBillTab_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
+            indicator.BackColor = Color.FromArgb(30, 144, 255);
 
             this.panelFormLoader.Controls.Clear();
             View.Bill.formBill FormCustomer_Vrb = new View.Bill.formBill() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -36,12 +37,14 @@ namespace shop_qr.View
 
         private void buttonExitTab_Click(object sender, EventArgs e)
         {
+            indicator.BackColor = Color.FromArgb(220, 20, 60);
             Application.Exit();
         }
 
         private void buttonProductTab_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
+            indicator.BackColor = Color.FromArgb(30, 144, 255);
 
             this.panelFormLoader.Controls.Clear();
             View.Product.formProduct FormCustomer_Vrb = new View.Product.formProduct() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -53,6 +56,7 @@ namespace shop_qr.View
         private void buttonCustomerTab_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
+            indicator.BackColor = Color.FromArgb(30, 144, 255);
 
             this.panelFormLoader.Controls.Clear();
             View.Customer.Customer FormCustomer_Vrb = new View.Customer.Customer() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -64,6 +68,8 @@ namespace shop_qr.View
         private void buttonHistory_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
+            indicator.BackColor = Color.FromArgb(30, 144, 255);
+
             this.panelFormLoader.Controls.Clear();
             View.History FormCustomer_Vrb = new View.History() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FormCustomer_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -74,6 +80,7 @@ namespace shop_qr.View
         private void buttonLogoutTab_Click(object sender, EventArgs e)
         {
             indicator.Top = ((Control)sender).Top;
+            indicator.BackColor = Color.FromArgb(220, 20, 60);
         }
     }
 }

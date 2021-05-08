@@ -52,7 +52,7 @@ namespace shop_qr.View
             this.progressSplash.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.progressSplash.BorderRadius = 9;
             this.progressSplash.BorderThickness = 1;
-            this.progressSplash.Location = new System.Drawing.Point(161, 340);
+            this.progressSplash.Location = new System.Drawing.Point(108, 346);
             this.progressSplash.Maximum = 110;
             this.progressSplash.MaximumValue = 110;
             this.progressSplash.Minimum = 0;
@@ -62,7 +62,7 @@ namespace shop_qr.View
             this.progressSplash.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.progressSplash.ProgressColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
             this.progressSplash.ProgressColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.progressSplash.Size = new System.Drawing.Size(285, 13);
+            this.progressSplash.Size = new System.Drawing.Size(389, 13);
             this.progressSplash.TabIndex = 0;
             this.progressSplash.Value = 10;
             this.progressSplash.ValueByTransition = 10;
@@ -71,20 +71,20 @@ namespace shop_qr.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(604, 369);
+            this.ClientSize = new System.Drawing.Size(598, 371);
             this.Controls.Add(this.progressSplash);
             this.DoubleBuffered = true;
-            this.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
-            this.TransparencyKey = System.Drawing.SystemColors.Desktop;
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
 
         }

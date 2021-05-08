@@ -57,11 +57,6 @@ namespace shop_qr.Presenter
         public void  GetCustomerById(int Id)
         {
             Model.Customer customer = Model.MCustomer.GetById(Id);
-            Console.WriteLine(customer.FullName);
-            if(customer == null)
-            {
-                return;
-            }
             view.CustomerId = customer.Id.ToString();
             view.CustomerFullName = customer.FullName;
             view.CustomerPhone = customer.Phone;

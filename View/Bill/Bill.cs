@@ -136,5 +136,12 @@ namespace shop_qr.View.Bill
             }
                 
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            videoCaptureDeviceInBill.Stop();
+            panelQRScannerInBill.Visible = false;
+            panelCustomerProfile.Visible = true;
+        }
     }
 }

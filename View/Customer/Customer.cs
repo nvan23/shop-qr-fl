@@ -52,6 +52,7 @@ namespace shop_qr.View.Customer
             this.Id = "";
             this.FullName = "";
             this.Phone = "";
+            pictureBoxShowQR.Image = null;
         }
 
 
@@ -80,6 +81,10 @@ namespace shop_qr.View.Customer
         {
             presenter.Delete();
             presenter.Read();  
+            this.Id = "";
+            this.FullName = "";
+            this.Phone = "";
+            pictureBoxShowQR.Image = null;
         }
 
         private void buttonPrintQR_Click(object sender, EventArgs e)
