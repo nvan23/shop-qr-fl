@@ -26,6 +26,10 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             Product _product = db.Products.FirstOrDefault(e => e.Id.Equals(product.Id));
+            if (_product == null)
+            {
+                return;
+            }
             _product.Name = product.Name;
             _product.Price = product.Price;
             db.SubmitChanges();
@@ -35,6 +39,10 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             Product _product = db.Products.FirstOrDefault(e => e.Id.Equals(product.Id));
+            if (_product == null)
+            {
+                return;
+            }
             db.Products.DeleteOnSubmit(_product);
             db.SubmitChanges();
         }

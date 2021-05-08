@@ -13,6 +13,7 @@ namespace shop_qr.View.Customer
         {
             InitializeComponent();
             presenter = new PCustomer(this);
+            presenter.Read();
         }
 
         public string Id { get => labelCustomerId.Text; set => labelCustomerId.Text = value.ToString(); }
@@ -70,6 +71,12 @@ namespace shop_qr.View.Customer
         private void panel15_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            presenter.Delete();
+            presenter.Read();  
         }
     }
 }

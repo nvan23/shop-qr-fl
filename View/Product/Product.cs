@@ -1,12 +1,6 @@
 ﻿using shop_qr.Presenter;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace shop_qr.View.Product
@@ -18,6 +12,7 @@ namespace shop_qr.View.Product
         {
             InitializeComponent();
             presenter = new PProduct(this);
+            presenter.Read();
         }
         public string Id { get =>labelProductID.Text; set => labelProductID.Text = value.ToString(); }
         public string Search { get => textBoxSearchProduct.Text; set => textBoxSearchProduct.Text = value.ToString(); }

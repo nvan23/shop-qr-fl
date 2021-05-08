@@ -41,6 +41,17 @@ namespace shop_qr.Presenter
 
             }
         }
+        public void Delete()
+        {
+            if (view.Id.Length > 0)
+            {
+                Model.Customer customer = new Model.Customer();
+                customer.Id = Int32.Parse(view.Id);
+                customer.FullName = view.FullName;
+                customer.Phone = view.Phone;
+                Model.MCustomer.Delete(customer);
+            }
+        }
 
     }
 }

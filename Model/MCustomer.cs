@@ -23,6 +23,10 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             Customer _customer = db.Customers.FirstOrDefault(e => e.Id.Equals(customer.Id));
+            if (_customer == null)
+            {
+                return;
+            }
             _customer.FullName = customer.FullName;
             _customer.Phone = customer.Phone;
             db.SubmitChanges();
@@ -32,6 +36,10 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             Customer _customer = db.Customers.FirstOrDefault(e => e.Id.Equals(customer.Id));
+            if (_customer == null)
+            {
+                return;
+            }
             db.Customers.DeleteOnSubmit(_customer);
             db.SubmitChanges();
         }

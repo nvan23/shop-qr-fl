@@ -16,9 +16,33 @@ namespace shop_qr.Presenter
             this.view = view;
         }
 
+        public void Create()
+        {
+            List<Model.MProductBill> list = view.BillDetails;
+            String customerId = "12"; // Add
+
+            Model.MBill.Create(customerId, list);
+        }
         public void ReadProduct()
         {
             view.Products = Model.MProduct.Read();
+        }
+        public void CalculateTotal()
+        {
+            
+            int sum = 0;
+            List<Model.MProductBill> list = view.BillDetails;
+            foreach (Model.MProductBill p in list)
+            {
+                sum += p.Quantity * p.Price;
+            }
+            view.Tax = ((int)(sum * 0.1));
+            view.Total = sum;
+            view.Pay = sum + (int)(sum * 0.1);
+        }
+        public void Search()
+        {
+            view.Products = Model.MProduct.Search(view.Search);
         }
     }
 }
