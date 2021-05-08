@@ -2,8 +2,16 @@
 using shop_qr.Presenter;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace shop_qr.View.Bill
 {
@@ -20,6 +28,11 @@ namespace shop_qr.View.Bill
 
         }
 
+        MJPEGStream stream;
+
+        FilterInfoCollection filterInfoCollectionInBill;
+        VideoCaptureDevice videoCaptureDeviceInBill;
+
         public int Total { get => Int32.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
         public int Tax { get => Int32.Parse(labelTaxInBill.Text); set => labelTaxInBill.Text = value.ToString(); }
         public int Pay { get => Int32.Parse(labelPayInBill.Text); set => labelPayInBill.Text = value.ToString(); }
@@ -30,9 +43,22 @@ namespace shop_qr.View.Bill
         public string Search { get => textBoxSearchProductInBill.Text; set => textBoxSearchProductInBill.Text = value.ToString(); }
         public string customerId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
         private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
         {
-            new View.QRScanner.formQRScanner().ShowDialog();
+            panelCustomerProfile.Visible = false;
+            panelQRScannerInBill.Visible = true;
+
+            timerQRScannerInBill.Enabled = true;
+
+            videoCaptureDeviceInBill = new VideoCaptureDevice(filterInfoCollectionInBill[comboBoxQRScannerInBill.SelectedIndex].MonikerString);
+            videoCaptureDeviceInBill.NewFrame += FinalFrame_NewFrame;
+            videoCaptureDeviceInBill.Start();
+            timerQRScannerInBill.Start();
         }
 
         private void dataGridViewProductInBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,6 +104,44 @@ namespace shop_qr.View.Bill
         private void s_Click(object sender, EventArgs e)
         {
             presenter.Create();
+        }
+
+        private void formBill_Load(object sender, EventArgs e)
+        {
+            filterInfoCollectionInBill = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo Device in filterInfoCollectionInBill)
+                comboBoxQRScannerInBill.Items.Add(Device.Name);
+            comboBoxQRScannerInBill.SelectedIndex = 0;
+            videoCaptureDeviceInBill = new VideoCaptureDevice();
+        }
+
+        private void timerQRScannerInBill_Tick(object sender, EventArgs e)
+        {
+            BarcodeReader Reader = new BarcodeReader();
+            Result result = Reader.Decode((Bitmap)pictureBoxQRScannerInBill.Image);
+            if (result != null)
+            {
+                labelCustomerNameInBill.Text = result.ToString();
+                videoCaptureDeviceInBill.Stop();
+                panelQRScannerInBill.Visible = false;
+                panelCustomerProfile.Visible = true;
+            }
+                
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            if (panelQRScannerInBill.Visible == false)
+            {
+                panelCustomerProfile.Visible = false;
+                panelQRScannerInBill.Visible = true;
+            }
+            else
+            {
+                panelCustomerProfile.Visible = true;
+                panelQRScannerInBill.Visible = false;
+            }
+
         }
     }
 }

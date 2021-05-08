@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using shop_qr.Model;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 using shop_qr.Presenter;
 using shop_qr.View;
 
@@ -22,6 +24,11 @@ namespace shop_qr.View
             presenter = new PHistory(this);
             presenter.Read();
         }
+
+        MJPEGStream stream;
+
+        FilterInfoCollection filterInfoCollectionInHistory;
+        VideoCaptureDevice videoCaptureDeviceInHistory;
 
         public string CustomerName { get => labelCustomerNameInHistory.Text; set => labelCustomerNameInHistory.Text = value.ToString(); }
         public string CustomerPhone { get => labelCustomerPhoneInHistory.Text; set => labelCustomerPhoneInHistory.Text = value.ToString(); }
@@ -41,6 +48,48 @@ namespace shop_qr.View
         private void buttonGetCustomerInfoInHistory_Click(object sender, EventArgs e)
         {
             new View.QRScanner.formQRScanner().ShowDialog();
+        }
+
+        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+
+        private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
+        {
+            panelCustomerProfile.Visible = false;
+            panelQRScannerInBill.Visible = true;
+
+            timerPickerInHistory.Enabled = true;
+
+            videoCaptureDeviceInHistory = new VideoCaptureDevice(filterInfoCollectionInHistory[comboBoxQRScannerInBill.SelectedIndex].MonikerString);
+            videoCaptureDeviceInHistory.NewFrame += FinalFrame_NewFrame;
+            videoCaptureDeviceInHistory.Start();
+            timerPickerInHistory.Start();
+        }
+
+        private void History_Load(object sender, EventArgs e)
+        {
+            filterInfoCollectionInHistory = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo Device in filterInfoCollectionInHistory)
+                comboBoxQRScannerInBill.Items.Add(Device.Name);
+            comboBoxQRScannerInBill.SelectedIndex = 0;
+            videoCaptureDeviceInHistory = new VideoCaptureDevice();
+        }
+
+        private void timerPickerInHistory_Tick(object sender, EventArgs e)
+        {
+            BarcodeReader Reader = new BarcodeReader();
+            Result result = Reader.Decode((Bitmap)pictureBoxQRScannerInBill.Image);
+            if (result != null)
+            {
+                labelCustomerNameInHistory.Text = result.ToString();
+                videoCaptureDeviceInHistory.Stop();
+                panelQRScannerInBill.Visible = false;
+                panelCustomerProfile.Visible = true;
+            }
+
         }
     }
 }

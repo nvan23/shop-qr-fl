@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using shop_qr.Presenter;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace shop_qr.View.Customer
 {
@@ -77,6 +80,16 @@ namespace shop_qr.View.Customer
         {
             presenter.Delete();
             presenter.Read();  
+        }
+
+        private void buttonPrintQR_Click(object sender, EventArgs e)
+        {
+            if(Id != null)
+            {
+                Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+                pictureBoxShowQR.Image = qrcode.Draw(Id, 1);
+            }
+            
         }
     }
 }
