@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using shop_qr.Model;
+﻿using shop_qr.Model;
 using shop_qr.Presenter;
-using shop_qr.View;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace shop_qr.View.Bill
 {
@@ -45,16 +39,17 @@ namespace shop_qr.View.Bill
         {
             bool found = false;
             Model.Product row = dataGridViewProductInBill.Rows[e.RowIndex].DataBoundItem as Model.Product;
-            List<MProductBill> arr = (List < MProductBill >)BillDetails;
+            List<MProductBill> arr = (List<MProductBill>)BillDetails;
             foreach (MProductBill b in arr)
             {
-                if (b.ProductId.Equals(row.Id.ToString())){
+                if (b.ProductId.Equals(row.Id.ToString()))
+                {
                     b.Quantity += 1;
                     found = true;
                     break;
                 }
             }
-            
+
             if (!found)
             {
                 MProductBill billDetail = new MProductBill();

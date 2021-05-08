@@ -192,12 +192,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\MProductBill.cs" />
     <Compile Include="Model\DataShop.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Model\MProductBill.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MBillDetail.cs" />
     <Compile Include="Model\MProduct.cs" />

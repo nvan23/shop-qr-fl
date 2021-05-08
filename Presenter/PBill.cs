@@ -19,9 +19,13 @@ namespace shop_qr.Presenter
         public void Create()
         {
             List<Model.MProductBill> list = view.BillDetails;
-            String customerId = "12"; // Add
+            String customerId = "1"; // Add
 
-            Model.MBill.Create(customerId, list);
+            bool isDone = Model.MBill.Create(customerId, list);
+            if (isDone)
+            {
+                view.BillDetails = new List<Model.MProductBill>();
+            }
         }
         public void ReadProduct()
         {

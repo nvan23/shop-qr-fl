@@ -8,13 +8,23 @@ namespace shop_qr.Model
 {
     class MBill
     {
-        public static Bill Create(string customerId, List<MProductBill> list)
+        public static bool Create(string Id, List<MProductBill> list)
         {
+            int customerId = Int32.Parse(Id);
             DataShopDataContext db = new DataShopDataContext();
+            
+
+            Customer customer = (Customer)db.Customers.FirstOrDefault<Customer>(e => e.Id == customerId);
+            if(customer == null)
+            {
+                return false;
+            }
             Bill bill = new Bill();
-            bill.CustomerId = Int32.Parse(customerId);
-            bill.CreatedAt = new DateTime();
+            bill.Customer = customer;
+            bill.CustomerId = customerId;
+
             db.Bills.InsertOnSubmit(bill);
+            db.SubmitChanges();
             foreach ( MProductBill bd in list)
             {
                 BillDetail billDetail = new BillDetail();
@@ -25,7 +35,8 @@ namespace shop_qr.Model
                 db.BillDetails.InsertOnSubmit(billDetail);
             }
             db.SubmitChanges();
-            return bill;
+
+            return true;
             
         }
         public static List<Bill> Read()

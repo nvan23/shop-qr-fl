@@ -26,6 +26,7 @@ create table Product (
 )
 
 create table BillDetail (
+	Id int IDENTITY(1,1) PRIMARY KEY,
 	BillId int,
 	ProductId int,
 	ProductPrice money,
