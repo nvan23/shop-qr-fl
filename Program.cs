@@ -17,7 +17,7 @@ namespace shop_qr
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.AppLayout());
+            Application.Run(new View.Splash());
         }
     }
 }
