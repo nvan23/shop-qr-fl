@@ -19,7 +19,6 @@
   </Table>
   <Table Name="dbo.BillDetail" Member="BillDetails">
     <Type Name="BillDetail">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="BillId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ProductId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ProductPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
