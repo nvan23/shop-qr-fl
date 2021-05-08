@@ -292,9 +292,8 @@ namespace shop_qr.View
             this.labelCustomerPhoneInHistory.Location = new System.Drawing.Point(12, 186);
             this.labelCustomerPhoneInHistory.Name = "labelCustomerPhoneInHistory";
             this.labelCustomerPhoneInHistory.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelCustomerPhoneInHistory.Size = new System.Drawing.Size(99, 21);
+            this.labelCustomerPhoneInHistory.Size = new System.Drawing.Size(0, 0);
             this.labelCustomerPhoneInHistory.TabIndex = 14;
-            this.labelCustomerPhoneInHistory.Text = "09633487566";
             this.labelCustomerPhoneInHistory.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelCustomerPhoneInHistory.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -339,9 +338,8 @@ namespace shop_qr.View
             this.labelCustomerNameInHistory.Location = new System.Drawing.Point(12, 100);
             this.labelCustomerNameInHistory.Name = "labelCustomerNameInHistory";
             this.labelCustomerNameInHistory.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelCustomerNameInHistory.Size = new System.Drawing.Size(100, 21);
+            this.labelCustomerNameInHistory.Size = new System.Drawing.Size(0, 0);
             this.labelCustomerNameInHistory.TabIndex = 11;
-            this.labelCustomerNameInHistory.Text = "Nguyễn Văn A";
             this.labelCustomerNameInHistory.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelCustomerNameInHistory.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -441,7 +439,7 @@ namespace shop_qr.View
             this.buttonGetCustomerInfoInHistory.ForeColor = System.Drawing.Color.White;
             this.buttonGetCustomerInfoInHistory.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonGetCustomerInfoInHistory.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonGetCustomerInfoInHistory.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonGetCustomerInfoInHistory.IconLeftPadding = new System.Windows.Forms.Padding(125, 3, 3, 3);
             this.buttonGetCustomerInfoInHistory.IconMarginLeft = 11;
             this.buttonGetCustomerInfoInHistory.IconPadding = 10;
             this.buttonGetCustomerInfoInHistory.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -452,7 +450,7 @@ namespace shop_qr.View
             this.buttonGetCustomerInfoInHistory.IdleBorderRadius = 1;
             this.buttonGetCustomerInfoInHistory.IdleBorderThickness = 1;
             this.buttonGetCustomerInfoInHistory.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.buttonGetCustomerInfoInHistory.IdleIconLeftImage = null;
+            this.buttonGetCustomerInfoInHistory.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonGetCustomerInfoInHistory.IdleIconLeftImage")));
             this.buttonGetCustomerInfoInHistory.IdleIconRightImage = null;
             this.buttonGetCustomerInfoInHistory.IndicateFocus = false;
             this.buttonGetCustomerInfoInHistory.Location = new System.Drawing.Point(0, 226);
@@ -479,7 +477,7 @@ namespace shop_qr.View
             this.buttonGetCustomerInfoInHistory.OnIdleState.BorderThickness = 1;
             this.buttonGetCustomerInfoInHistory.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.buttonGetCustomerInfoInHistory.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.buttonGetCustomerInfoInHistory.OnIdleState.IconLeftImage = null;
+            this.buttonGetCustomerInfoInHistory.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonGetCustomerInfoInHistory.OnIdleState.IconLeftImage")));
             this.buttonGetCustomerInfoInHistory.OnIdleState.IconRightImage = null;
             this.buttonGetCustomerInfoInHistory.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonGetCustomerInfoInHistory.OnPressedState.BorderRadius = 1;
@@ -494,8 +492,9 @@ namespace shop_qr.View
             this.buttonGetCustomerInfoInHistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonGetCustomerInfoInHistory.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonGetCustomerInfoInHistory.TextMarginLeft = 0;
-            this.buttonGetCustomerInfoInHistory.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonGetCustomerInfoInHistory.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonGetCustomerInfoInHistory.UseDefaultRadiusAndThickness = true;
+            this.buttonGetCustomerInfoInHistory.Click += new System.EventHandler(this.buttonGetCustomerInfoInHistory_Click);
             // 
             // dataGridViewTextBoxColumn7
             // 

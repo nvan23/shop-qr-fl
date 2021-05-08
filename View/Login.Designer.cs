@@ -152,9 +152,9 @@ namespace shop_qr.View
             this.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
             this.buttonLogin.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogin.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonLogin.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonLogin.IconLeftPadding = new System.Windows.Forms.Padding(75, 3, 3, 3);
             this.buttonLogin.IconMarginLeft = 11;
-            this.buttonLogin.IconPadding = 10;
+            this.buttonLogin.IconPadding = 5;
             this.buttonLogin.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonLogin.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.buttonLogin.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
@@ -163,7 +163,7 @@ namespace shop_qr.View
             this.buttonLogin.IdleBorderRadius = 10;
             this.buttonLogin.IdleBorderThickness = 1;
             this.buttonLogin.IdleFillColor = System.Drawing.Color.White;
-            this.buttonLogin.IdleIconLeftImage = null;
+            this.buttonLogin.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonLogin.IdleIconLeftImage")));
             this.buttonLogin.IdleIconRightImage = null;
             this.buttonLogin.IndicateFocus = false;
             this.buttonLogin.Location = new System.Drawing.Point(60, 281);
@@ -190,7 +190,7 @@ namespace shop_qr.View
             this.buttonLogin.OnIdleState.BorderThickness = 1;
             this.buttonLogin.OnIdleState.FillColor = System.Drawing.Color.White;
             this.buttonLogin.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
-            this.buttonLogin.OnIdleState.IconLeftImage = null;
+            this.buttonLogin.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonLogin.OnIdleState.IconLeftImage")));
             this.buttonLogin.OnIdleState.IconRightImage = null;
             this.buttonLogin.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonLogin.OnPressedState.BorderRadius = 10;
@@ -205,7 +205,7 @@ namespace shop_qr.View
             this.buttonLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonLogin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonLogin.TextMarginLeft = 0;
-            this.buttonLogin.TextPadding = new System.Windows.Forms.Padding(0, -1, 0, 0);
+            this.buttonLogin.TextPadding = new System.Windows.Forms.Padding(10, -1, 0, 0);
             this.buttonLogin.UseDefaultRadiusAndThickness = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 

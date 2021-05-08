@@ -37,5 +37,11 @@ namespace shop_qr.View
                 presenter.ReadDetail(row.Id);
             }
         }
+        public List<Model.BillDetail> Details { get => (List<Model.BillDetail>)dataGridViewBillDetailHistory.DataSource; set => dataGridViewBillDetailHistory.DataSource = value; }
+
+        private void buttonGetCustomerInfoInHistory_Click(object sender, EventArgs e)
+        {
+            new View.QRScanner.formQRScanner().ShowDialog();
+        }
     }
 }
