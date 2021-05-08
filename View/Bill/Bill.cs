@@ -23,13 +23,13 @@ namespace shop_qr.View.Bill
         public int Total { get => Int32.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
         public int Tax { get => Int32.Parse(labelTaxInBill.Text); set => labelTaxInBill.Text = value.ToString(); }
         public int Pay { get => Int32.Parse(labelPayInBill.Text); set => labelPayInBill.Text = value.ToString(); }
-        public int CustomerPay { get => Int32.Parse(labelCustomerPayInBill.Text); set => labelCustomerPayInBill.Text = value.ToString(); }
-        public int Balance { get => Int32.Parse(labelBalanceInBill.Text); set => labelBalanceInBill.Text = value.ToString(); }
         public List<MProductBill> BillDetails { get => (List<MProductBill>)dataGridViewBillDetail.DataSource; set => dataGridViewBillDetail.DataSource = value; }
         public string FullName { get => labelCustomerNameInBill.Text; set => labelCustomerNameInBill.Text = value.ToString(); }
         public string Phone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
         public List<Model.Product> Products { get => (List<Model.Product>)dataGridViewProductInBill.DataSource; set => dataGridViewProductInBill.DataSource = value; }
         public string Search { get => textBoxSearchProductInBill.Text; set => textBoxSearchProductInBill.Text = value.ToString(); }
+        public string customerId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
         {
             new View.QRScanner.formQRScanner().ShowDialog();
