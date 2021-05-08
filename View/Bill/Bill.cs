@@ -41,8 +41,10 @@ namespace shop_qr.View.Bill
         public string Phone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
         public List<Model.Product> Products { get => (List<Model.Product>)dataGridViewProductInBill.DataSource; set => dataGridViewProductInBill.DataSource = value; }
         public string Search { get => textBoxSearchProductInBill.Text; set => textBoxSearchProductInBill.Text = value.ToString(); }
-        public string customerId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CustomerId { get => labelCustomerId.Text; set => labelCustomerId.Text = value.ToString(); }
+        public string CustomerFullName { get => labelCustomerNameInBill.Text; set => labelCustomerNameInBill.Text = value.ToString(); }
 
+        public string CustomerPhone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
@@ -118,10 +120,16 @@ namespace shop_qr.View.Bill
         private void timerQRScannerInBill_Tick(object sender, EventArgs e)
         {
             BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)pictureBoxQRScannerInBill.Image);
+            Bitmap bitmap = (Bitmap)pictureBoxQRScannerInBill.Image;
+            if (bitmap == null)
+            {
+                return;
+            }
+
+            Result result = Reader.Decode(bitmap);
             if (result != null)
             {
-                labelCustomerNameInBill.Text = result.ToString();
+                presenter.GetCustomerById(Int32.Parse(result.Text));
                 videoCaptureDeviceInBill.Stop();
                 panelQRScannerInBill.Visible = false;
                 panelCustomerProfile.Visible = true;

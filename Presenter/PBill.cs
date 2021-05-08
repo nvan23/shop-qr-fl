@@ -18,8 +18,14 @@ namespace shop_qr.Presenter
 
         public void Create()
         {
+            
             List<Model.MProductBill> list = view.BillDetails;
-            String customerId = "1"; // Add
+            String customerId = view.CustomerId; 
+            if (list.Count ==0 || customerId.Length == 0)
+            {
+                return;
+            }
+           
 
             bool isDone = Model.MBill.Create(customerId, list);
             if (isDone)
@@ -47,6 +53,18 @@ namespace shop_qr.Presenter
         public void Search()
         {
             view.Products = Model.MProduct.Search(view.Search);
+        }
+        public void  GetCustomerById(int Id)
+        {
+            Model.Customer customer = Model.MCustomer.GetById(Id);
+            Console.WriteLine(customer.FullName);
+            if(customer == null)
+            {
+                return;
+            }
+            view.CustomerId = customer.Id.ToString();
+            view.CustomerFullName = customer.FullName;
+            view.CustomerPhone = customer.Phone;
         }
     }
 }

@@ -11,6 +11,8 @@ namespace shop_qr.View
         List<Model.Product> Products { get; set; }
         List<MProductBill> BillDetails { get; set; }
         string Search { get; set; }
-        string customerId { get; set; }
+        string CustomerId { get; set; }
+        string CustomerFullName { get; set; }
+        string CustomerPhone { get; set; }
     }
 }
