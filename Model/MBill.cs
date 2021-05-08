@@ -60,13 +60,17 @@ namespace shop_qr.Model
             List<MProductBill> r = new List<MProductBill>();
             DataShopDataContext db = new DataShopDataContext();
             List<BillDetail> list = db.BillDetails.Where(b => b.BillId == Id).ToList();
-            Console.WriteLine("List infor" + list.Count);
+          
+            if (list.Count == 0)
+            {
+                return r;
+            }
 
             foreach (BillDetail b in list)
             {
                 MProductBill m = new MProductBill();
                 m.ProductId = b.ProductId.ToString();
-                m.ProductName = b.Product.Name;
+                m.ProductName = db.Products.FirstOrDefault<Product>(p => p.Id == b.ProductId).Name;
                 m.Quantity = (int)b.Quantity;
                 m.Price = (int)b.ProductPrice;
                 r.Add(m);

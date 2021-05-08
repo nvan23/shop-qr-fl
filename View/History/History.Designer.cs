@@ -32,12 +32,11 @@ namespace shop_qr.View
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.formHistory = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -45,6 +44,10 @@ namespace shop_qr.View
             this.dataGridViewBillDetailHistory = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panel21 = new System.Windows.Forms.Panel();
             this.dataGridViewBillHistory = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.billDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel24 = new System.Windows.Forms.Panel();
             this.labelCustomerPhoneInHistory = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator10 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -55,15 +58,10 @@ namespace shop_qr.View
             this.bunifuLabel30 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel32 = new Bunifu.UI.WinForms.BunifuLabel();
             this.buttonGetCustomerInfoInHistory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.formHistory.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -143,8 +141,7 @@ namespace shop_qr.View
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewButtonColumn2});
+            this.dataGridViewTextBoxColumn13});
             this.dataGridViewBillDetailHistory.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dataGridViewBillDetailHistory.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dataGridViewBillDetailHistory.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -163,14 +160,14 @@ namespace shop_qr.View
             this.dataGridViewBillDetailHistory.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewBillDetailHistory.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dataGridViewBillDetailHistory.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBillDetailHistory.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBillDetailHistory.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewBillDetailHistory.EnableHeadersVisualStyles = false;
             this.dataGridViewBillDetailHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dataGridViewBillDetailHistory.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -200,22 +197,22 @@ namespace shop_qr.View
             this.dataGridViewBillHistory.AllowCustomTheming = false;
             this.dataGridViewBillHistory.AllowUserToAddRows = false;
             this.dataGridViewBillHistory.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewBillHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewBillHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewBillHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBillHistory.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewBillHistory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewBillHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewBillHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBillHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBillHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewBillHistory.ColumnHeadersHeight = 40;
             this.dataGridViewBillHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
@@ -240,14 +237,14 @@ namespace shop_qr.View
             this.dataGridViewBillHistory.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewBillHistory.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dataGridViewBillHistory.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBillHistory.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBillHistory.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewBillHistory.EnableHeadersVisualStyles = false;
             this.dataGridViewBillHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dataGridViewBillHistory.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -263,6 +260,35 @@ namespace shop_qr.View
             this.dataGridViewBillHistory.TabIndex = 7;
             this.dataGridViewBillHistory.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dataGridViewBillHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBillHistory_CellClick);
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Mã hóa đơn";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // billDate
+            // 
+            this.billDate.DataPropertyName = "CreatedAt";
+            this.billDate.HeaderText = "Thời gian";
+            this.billDate.Name = "billDate";
+            this.billDate.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "CustomerId";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Mã KH";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // Customer
+            // 
+            this.Customer.DataPropertyName = "Customer";
+            this.Customer.HeaderText = "Column1";
+            this.Customer.Name = "Customer";
+            this.Customer.ReadOnly = true;
+            this.Customer.Visible = false;
             // 
             // panel24
             // 
@@ -496,35 +522,6 @@ namespace shop_qr.View
             this.buttonGetCustomerInfoInHistory.UseDefaultRadiusAndThickness = true;
             this.buttonGetCustomerInfoInHistory.Click += new System.EventHandler(this.buttonGetCustomerInfoInHistory_Click);
             // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Mã hóa đơn";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // billDate
-            // 
-            this.billDate.DataPropertyName = "CreatedAt";
-            this.billDate.HeaderText = "Thời gian";
-            this.billDate.Name = "billDate";
-            this.billDate.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "CustomerId";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Mã KH";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // Customer
-            // 
-            this.Customer.DataPropertyName = "Customer";
-            this.Customer.HeaderText = "Column1";
-            this.Customer.Name = "Customer";
-            this.Customer.ReadOnly = true;
-            this.Customer.Visible = false;
-            // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "ProductId";
@@ -550,18 +547,6 @@ namespace shop_qr.View
             this.dataGridViewTextBoxColumn13.DataPropertyName = "Price";
             this.dataGridViewTextBoxColumn13.HeaderText = "Giá";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewButtonColumn2.FillWeight = 50F;
-            this.dataGridViewButtonColumn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewButtonColumn2.HeaderText = "";
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.Text = "Thêm";
             // 
             // History
             // 
@@ -612,6 +597,5 @@ namespace shop_qr.View
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
     }
 }

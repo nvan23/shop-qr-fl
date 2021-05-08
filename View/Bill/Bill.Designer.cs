@@ -30,24 +30,26 @@ namespace shop_qr.View.Bill
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formBill));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.labelTotalInBill = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator5 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.panel14 = new System.Windows.Forms.Panel();
             this.buttonCancelBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -66,11 +68,6 @@ namespace shop_qr.View.Bill
             this.panel12 = new System.Windows.Forms.Panel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dataGridViewBillDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prouctPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.removeProduct = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -95,11 +92,13 @@ namespace shop_qr.View.Bill
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.buttonGetCustomerInfoInBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.labelTotalInBill = new Bunifu.UI.WinForms.BunifuLabel();
+            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prouctPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -111,7 +110,6 @@ namespace shop_qr.View.Bill
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -144,6 +142,49 @@ namespace shop_qr.View.Bill
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(353, 381);
             this.panel13.TabIndex = 35;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.bunifuLabel8);
+            this.panel6.Controls.Add(this.labelTotalInBill);
+            this.panel6.Location = new System.Drawing.Point(7, 127);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(337, 30);
+            this.panel6.TabIndex = 56;
+            // 
+            // bunifuLabel8
+            // 
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel8.Location = new System.Drawing.Point(0, 6);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(74, 21);
+            this.bunifuLabel8.TabIndex = 38;
+            this.bunifuLabel8.Text = "Tổng tiền:";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // labelTotalInBill
+            // 
+            this.labelTotalInBill.AllowParentOverrides = false;
+            this.labelTotalInBill.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelTotalInBill.AutoEllipsis = false;
+            this.labelTotalInBill.CursorType = null;
+            this.labelTotalInBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalInBill.ForeColor = System.Drawing.Color.DimGray;
+            this.labelTotalInBill.Location = new System.Drawing.Point(265, 6);
+            this.labelTotalInBill.Name = "labelTotalInBill";
+            this.labelTotalInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelTotalInBill.Size = new System.Drawing.Size(69, 21);
+            this.labelTotalInBill.TabIndex = 39;
+            this.labelTotalInBill.Text = "3,450,000";
+            this.labelTotalInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTotalInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuSeparator5
             // 
@@ -190,11 +231,11 @@ namespace shop_qr.View.Bill
             this.buttonCancelBill.ColorContrastOnClick = 45;
             this.buttonCancelBill.ColorContrastOnHover = 45;
             this.buttonCancelBill.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.buttonCancelBill.CustomizableEdges = borderEdges5;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.buttonCancelBill.CustomizableEdges = borderEdges1;
             this.buttonCancelBill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonCancelBill.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonCancelBill.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -281,11 +322,11 @@ namespace shop_qr.View.Bill
             this.s.ColorContrastOnClick = 45;
             this.s.ColorContrastOnHover = 45;
             this.s.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.s.CustomizableEdges = borderEdges6;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.s.CustomizableEdges = borderEdges2;
             this.s.DialogResult = System.Windows.Forms.DialogResult.None;
             this.s.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.s.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -549,29 +590,28 @@ namespace shop_qr.View.Bill
             this.dataGridViewBillDetail.AllowCustomTheming = false;
             this.dataGridViewBillDetail.AllowUserToAddRows = false;
             this.dataGridViewBillDetail.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewBillDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBillDetail.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewBillDetail.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewBillDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewBillDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewBillDetail.ColumnHeadersHeight = 40;
             this.dataGridViewBillDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productID,
             this.ProductName,
             this.quantity,
-            this.prouctPrice,
-            this.removeProduct});
+            this.prouctPrice});
             this.dataGridViewBillDetail.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dataGridViewBillDetail.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dataGridViewBillDetail.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -590,14 +630,14 @@ namespace shop_qr.View.Bill
             this.dataGridViewBillDetail.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewBillDetail.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dataGridViewBillDetail.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBillDetail.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBillDetail.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewBillDetail.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridViewBillDetail.EnableHeadersVisualStyles = false;
             this.dataGridViewBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
@@ -613,48 +653,6 @@ namespace shop_qr.View.Bill
             this.dataGridViewBillDetail.Size = new System.Drawing.Size(565, 354);
             this.dataGridViewBillDetail.TabIndex = 4;
             this.dataGridViewBillDetail.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // productID
-            // 
-            this.productID.DataPropertyName = "ProductId";
-            this.productID.HeaderText = "Mã SP";
-            this.productID.Name = "productID";
-            this.productID.ReadOnly = true;
-            // 
-            // ProductName
-            // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "Tên SP";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // quantity
-            // 
-            this.quantity.DataPropertyName = "Quantity";
-            this.quantity.FillWeight = 80F;
-            this.quantity.HeaderText = "Số lượng";
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
-            // 
-            // prouctPrice
-            // 
-            this.prouctPrice.DataPropertyName = "Price";
-            this.prouctPrice.HeaderText = "Giá";
-            this.prouctPrice.Name = "prouctPrice";
-            this.prouctPrice.ReadOnly = true;
-            // 
-            // removeProduct
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            this.removeProduct.DefaultCellStyle = dataGridViewCellStyle10;
-            this.removeProduct.FillWeight = 50F;
-            this.removeProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeProduct.HeaderText = "";
-            this.removeProduct.Name = "removeProduct";
-            this.removeProduct.ReadOnly = true;
-            this.removeProduct.Text = "Thêm";
             // 
             // panel3
             // 
@@ -721,26 +719,26 @@ namespace shop_qr.View.Bill
             this.textBoxSearchProductInBill.Modified = false;
             this.textBoxSearchProductInBill.Multiline = false;
             this.textBoxSearchProductInBill.Name = "textBoxSearchProductInBill";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProductInBill.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxSearchProductInBill.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProductInBill.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxSearchProductInBill.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProductInBill.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxSearchProductInBill.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProductInBill.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textBoxSearchProductInBill.OnIdleState = stateProperties4;
             this.textBoxSearchProductInBill.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxSearchProductInBill.PasswordChar = '\0';
             this.textBoxSearchProductInBill.PlaceholderForeColor = System.Drawing.Color.DimGray;
@@ -781,11 +779,11 @@ namespace shop_qr.View.Bill
             this.buttonSearchProductInBill.ColorContrastOnClick = 45;
             this.buttonSearchProductInBill.ColorContrastOnHover = 45;
             this.buttonSearchProductInBill.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.buttonSearchProductInBill.CustomizableEdges = borderEdges7;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.buttonSearchProductInBill.CustomizableEdges = borderEdges3;
             this.buttonSearchProductInBill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonSearchProductInBill.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonSearchProductInBill.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -858,23 +856,23 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.AllowCustomTheming = false;
             this.dataGridViewProductInBill.AllowUserToAddRows = false;
             this.dataGridViewProductInBill.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.dataGridViewProductInBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewProductInBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewProductInBill.AutoGenerateColumns = false;
             this.dataGridViewProductInBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewProductInBill.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewProductInBill.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewProductInBill.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewProductInBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProductInBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProductInBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewProductInBill.ColumnHeadersHeight = 40;
             this.dataGridViewProductInBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProduct,
@@ -899,14 +897,14 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dataGridViewProductInBill.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewProductInBill.DataSource = this.productBindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewProductInBill.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewProductInBill.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewProductInBill.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridViewProductInBill.EnableHeadersVisualStyles = false;
             this.dataGridViewProductInBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
@@ -1166,11 +1164,11 @@ namespace shop_qr.View.Bill
             this.buttonGetCustomerInfoInBill.ColorContrastOnClick = 45;
             this.buttonGetCustomerInfoInBill.ColorContrastOnHover = 45;
             this.buttonGetCustomerInfoInBill.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.buttonGetCustomerInfoInBill.CustomizableEdges = borderEdges8;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.buttonGetCustomerInfoInBill.CustomizableEdges = borderEdges4;
             this.buttonGetCustomerInfoInBill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.buttonGetCustomerInfoInBill.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonGetCustomerInfoInBill.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1238,48 +1236,34 @@ namespace shop_qr.View.Bill
             this.buttonGetCustomerInfoInBill.UseDefaultRadiusAndThickness = true;
             this.buttonGetCustomerInfoInBill.Click += new System.EventHandler(this.buttonGetCustomerInfoInBill_Click);
             // 
-            // panel6
+            // productID
             // 
-            this.panel6.Controls.Add(this.bunifuLabel8);
-            this.panel6.Controls.Add(this.labelTotalInBill);
-            this.panel6.Location = new System.Drawing.Point(7, 127);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(337, 30);
-            this.panel6.TabIndex = 56;
+            this.productID.DataPropertyName = "ProductId";
+            this.productID.HeaderText = "Mã SP";
+            this.productID.Name = "productID";
+            this.productID.ReadOnly = true;
             // 
-            // bunifuLabel8
+            // ProductName
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel8.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel8.Location = new System.Drawing.Point(0, 6);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(74, 21);
-            this.bunifuLabel8.TabIndex = 38;
-            this.bunifuLabel8.Text = "Tổng tiền:";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Tên SP";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
             // 
-            // labelTotalInBill
+            // quantity
             // 
-            this.labelTotalInBill.AllowParentOverrides = false;
-            this.labelTotalInBill.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelTotalInBill.AutoEllipsis = false;
-            this.labelTotalInBill.CursorType = null;
-            this.labelTotalInBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalInBill.ForeColor = System.Drawing.Color.DimGray;
-            this.labelTotalInBill.Location = new System.Drawing.Point(265, 6);
-            this.labelTotalInBill.Name = "labelTotalInBill";
-            this.labelTotalInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTotalInBill.Size = new System.Drawing.Size(69, 21);
-            this.labelTotalInBill.TabIndex = 39;
-            this.labelTotalInBill.Text = "3,450,000";
-            this.labelTotalInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelTotalInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.quantity.DataPropertyName = "Quantity";
+            this.quantity.FillWeight = 80F;
+            this.quantity.HeaderText = "Số lượng";
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            // 
+            // prouctPrice
+            // 
+            this.prouctPrice.DataPropertyName = "Price";
+            this.prouctPrice.HeaderText = "Giá";
+            this.prouctPrice.Name = "prouctPrice";
+            this.prouctPrice.ReadOnly = true;
             // 
             // formBill
             // 
@@ -1294,6 +1278,8 @@ namespace shop_qr.View.Bill
             this.panel4.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
@@ -1307,8 +1293,6 @@ namespace shop_qr.View.Bill
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1356,16 +1340,15 @@ namespace shop_qr.View.Bill
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn PriceProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prouctPrice;
-        private System.Windows.Forms.DataGridViewButtonColumn removeProduct;
         private Bunifu.UI.WinForms.BunifuLabel labelCustomerId;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator10;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.Panel panel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel labelTotalInBill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prouctPrice;
     }
 }

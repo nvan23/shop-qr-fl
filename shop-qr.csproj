@@ -338,10 +338,10 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="Shop.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Shop_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Shop.mdf</DependentUpon>
     </Content>
     <Content Include="sql.txt" />

@@ -9,22 +9,23 @@
       <Association Name="Customer_Bill" Member="Customer" ThisKey="CustomerId" OtherKey="Id" Type="Customer" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Product" Member="Products">
-    <Type Name="Product">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Association Name="Product_BillDetail" Member="BillDetails" ThisKey="Id" OtherKey="ProductId" Type="BillDetail" />
-    </Type>
-  </Table>
   <Table Name="dbo.BillDetail" Member="BillDetails">
     <Type Name="BillDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="BillId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ProductId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ProductPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Bill_BillDetail" Member="Bill" ThisKey="BillId" OtherKey="Id" Type="Bill" IsForeignKey="true" />
       <Association Name="Product_BillDetail" Member="Product" ThisKey="ProductId" OtherKey="Id" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Product_BillDetail" Member="BillDetails" ThisKey="Id" OtherKey="ProductId" Type="BillDetail" />
     </Type>
   </Table>
   <Table Name="dbo.Customer" Member="Customers">
