@@ -22,9 +22,11 @@ namespace shop_qr.Model
             Bill bill = new Bill();
             bill.Customer = customer;
             bill.CustomerId = customerId;
+            bill.CreatedAt = DateTime.Now;
 
             db.Bills.InsertOnSubmit(bill);
             db.SubmitChanges();
+
             foreach ( MProductBill bd in list)
             {
                 BillDetail billDetail = new BillDetail();
@@ -43,6 +45,7 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             List<Bill> list = db.Bills.ToList<Bill>();
+            Console.WriteLine("asdasdsadasdsd",list.Count);
             return list;
 
         }        
@@ -51,6 +54,24 @@ namespace shop_qr.Model
             DataShopDataContext db = new DataShopDataContext();
             List<Bill> list = db.Bills.Where(b=>b.CustomerId == customer.Id).ToList();
             return list;
+        }
+        public static List<MProductBill> ReadDetail(int Id)
+        {
+            List<MProductBill> r = new List<MProductBill>();
+            DataShopDataContext db = new DataShopDataContext();
+            List<BillDetail> list = db.BillDetails.Where(b => b.BillId == Id).ToList();
+            Console.WriteLine("List infor" + list.Count);
+
+            foreach (BillDetail b in list)
+            {
+                MProductBill m = new MProductBill();
+                m.ProductId = b.ProductId.ToString();
+                m.ProductName = b.Product.Name;
+                m.Quantity = (int)b.Quantity;
+                m.Price = (int)b.ProductPrice;
+                r.Add(m);
+            }
+            return r;
         }
     }
 }

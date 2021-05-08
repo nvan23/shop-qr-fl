@@ -8,6 +8,6 @@ namespace shop_qr.View
         string CustomerName { get; set; }
         string CustomerPhone { get; set; }
         List<Model.Bill> Bills { get; set; }
-        List<Model.BillDetail> Details { get; set; }
+        List<Model.MProductBill> Details { get; set; }
     }
 }
