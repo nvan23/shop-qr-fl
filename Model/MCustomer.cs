@@ -60,5 +60,12 @@ namespace shop_qr.Model
             }
             return list;
         }
+        public static Customer GetById(int Id)
+        {
+            DataShopDataContext db = new DataShopDataContext();
+            return db.Customers.FirstOrDefault<Customer>(c => c.Id == Id);
+
+        }
+
     }
 }

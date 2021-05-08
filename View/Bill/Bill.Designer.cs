@@ -45,10 +45,26 @@ namespace shop_qr.View.Bill
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formBill));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.product = new shop_qr.Product();
             this.timerQRScannerInBill = new System.Windows.Forms.Timer(this.components);
             this.panel13 = new System.Windows.Forms.Panel();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.labelTotalInBill = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator5 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.labelPayInBill = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -60,11 +76,6 @@ namespace shop_qr.View.Bill
             this.bunifuLabel18 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel17 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelQRScannerInBill = new System.Windows.Forms.Panel();
-            this.pictureBoxQRScannerInBill = new System.Windows.Forms.PictureBox();
-            this.comboBoxQRScannerInBill = new System.Windows.Forms.ComboBox();
-            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panelCustomerProfile = new System.Windows.Forms.Panel();
             this.labelCustomerId = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator10 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -75,6 +86,11 @@ namespace shop_qr.View.Bill
             this.labelCustomerNameInBill = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.panelQRScannerInBill = new System.Windows.Forms.Panel();
+            this.pictureBoxQRScannerInBill = new System.Windows.Forms.PictureBox();
+            this.comboBoxQRScannerInBill = new System.Windows.Forms.ComboBox();
+            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dataGridViewProductInBill = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.IdProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -96,9 +112,9 @@ namespace shop_qr.View.Bill
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelCustomerProfile.SuspendLayout();
             this.panelQRScannerInBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRScannerInBill)).BeginInit();
-            this.panelCustomerProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductInBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBillDetail)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +154,40 @@ namespace shop_qr.View.Bill
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(353, 198);
             this.panel13.TabIndex = 37;
+            // 
+            // bunifuLabel8
+            // 
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel8.Location = new System.Drawing.Point(8, 55);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(74, 21);
+            this.bunifuLabel8.TabIndex = 73;
+            this.bunifuLabel8.Text = "Tổng tiền:";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // labelTotalInBill
+            // 
+            this.labelTotalInBill.AllowParentOverrides = false;
+            this.labelTotalInBill.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelTotalInBill.AutoEllipsis = false;
+            this.labelTotalInBill.CursorType = null;
+            this.labelTotalInBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalInBill.ForeColor = System.Drawing.Color.DimGray;
+            this.labelTotalInBill.Location = new System.Drawing.Point(273, 55);
+            this.labelTotalInBill.Name = "labelTotalInBill";
+            this.labelTotalInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelTotalInBill.Size = new System.Drawing.Size(69, 21);
+            this.labelTotalInBill.TabIndex = 74;
+            this.labelTotalInBill.Text = "3,450,000";
+            this.labelTotalInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTotalInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuSeparator5
             // 
@@ -310,64 +360,6 @@ namespace shop_qr.View.Bill
             this.panel2.Size = new System.Drawing.Size(353, 394);
             this.panel2.TabIndex = 39;
             // 
-            // panelQRScannerInBill
-            // 
-            this.panelQRScannerInBill.Controls.Add(this.pictureBoxQRScannerInBill);
-            this.panelQRScannerInBill.Controls.Add(this.comboBoxQRScannerInBill);
-            this.panelQRScannerInBill.Location = new System.Drawing.Point(4, 47);
-            this.panelQRScannerInBill.Name = "panelQRScannerInBill";
-            this.panelQRScannerInBill.Size = new System.Drawing.Size(344, 342);
-            this.panelQRScannerInBill.TabIndex = 10;
-            this.panelQRScannerInBill.Visible = false;
-            // 
-            // pictureBoxQRScannerInBill
-            // 
-            this.pictureBoxQRScannerInBill.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxQRScannerInBill.Name = "pictureBoxQRScannerInBill";
-            this.pictureBoxQRScannerInBill.Size = new System.Drawing.Size(338, 336);
-            this.pictureBoxQRScannerInBill.TabIndex = 1;
-            this.pictureBoxQRScannerInBill.TabStop = false;
-            // 
-            // comboBoxQRScannerInBill
-            // 
-            this.comboBoxQRScannerInBill.FormattingEnabled = true;
-            this.comboBoxQRScannerInBill.Location = new System.Drawing.Point(6, 307);
-            this.comboBoxQRScannerInBill.Name = "comboBoxQRScannerInBill";
-            this.comboBoxQRScannerInBill.Size = new System.Drawing.Size(334, 21);
-            this.comboBoxQRScannerInBill.TabIndex = 0;
-            this.comboBoxQRScannerInBill.Visible = false;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(1, 37);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator1.Size = new System.Drawing.Size(350, 14);
-            this.bunifuSeparator1.TabIndex = 9;
-            // 
-            // bunifuLabel7
-            // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.CursorType = null;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel7.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuLabel7.Location = new System.Drawing.Point(73, 8);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(208, 30);
-            this.bunifuLabel7.TabIndex = 8;
-            this.bunifuLabel7.Text = "Thông tin thành viên";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // panelCustomerProfile
             // 
             this.panelCustomerProfile.BackColor = System.Drawing.Color.White;
@@ -523,6 +515,64 @@ namespace shop_qr.View.Bill
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // panelQRScannerInBill
+            // 
+            this.panelQRScannerInBill.Controls.Add(this.pictureBoxQRScannerInBill);
+            this.panelQRScannerInBill.Controls.Add(this.comboBoxQRScannerInBill);
+            this.panelQRScannerInBill.Location = new System.Drawing.Point(4, 47);
+            this.panelQRScannerInBill.Name = "panelQRScannerInBill";
+            this.panelQRScannerInBill.Size = new System.Drawing.Size(344, 342);
+            this.panelQRScannerInBill.TabIndex = 10;
+            this.panelQRScannerInBill.Visible = false;
+            // 
+            // pictureBoxQRScannerInBill
+            // 
+            this.pictureBoxQRScannerInBill.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxQRScannerInBill.Name = "pictureBoxQRScannerInBill";
+            this.pictureBoxQRScannerInBill.Size = new System.Drawing.Size(338, 336);
+            this.pictureBoxQRScannerInBill.TabIndex = 1;
+            this.pictureBoxQRScannerInBill.TabStop = false;
+            // 
+            // comboBoxQRScannerInBill
+            // 
+            this.comboBoxQRScannerInBill.FormattingEnabled = true;
+            this.comboBoxQRScannerInBill.Location = new System.Drawing.Point(6, 307);
+            this.comboBoxQRScannerInBill.Name = "comboBoxQRScannerInBill";
+            this.comboBoxQRScannerInBill.Size = new System.Drawing.Size(334, 21);
+            this.comboBoxQRScannerInBill.TabIndex = 0;
+            this.comboBoxQRScannerInBill.Visible = false;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(1, 37);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(350, 14);
+            this.bunifuSeparator1.TabIndex = 9;
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.ForeColor = System.Drawing.Color.DimGray;
+            this.bunifuLabel7.Location = new System.Drawing.Point(73, 8);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(208, 30);
+            this.bunifuLabel7.TabIndex = 8;
+            this.bunifuLabel7.Text = "Thông tin thành viên";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // dataGridViewProductInBill
             // 
             this.dataGridViewProductInBill.AllowCustomTheming = false;
@@ -591,6 +641,7 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.Size = new System.Drawing.Size(586, 246);
             this.dataGridViewProductInBill.TabIndex = 40;
             this.dataGridViewProductInBill.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridViewProductInBill.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductInBill_CellContentClick);
             // 
             // IdProduct
             // 
@@ -775,6 +826,7 @@ namespace shop_qr.View.Bill
             this.buttonSearchProductInBill.TextMarginLeft = 0;
             this.buttonSearchProductInBill.TextPadding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonSearchProductInBill.UseDefaultRadiusAndThickness = true;
+            this.buttonSearchProductInBill.Click += new System.EventHandler(this.buttonSearchProductInBill_Click);
             // 
             // dataGridViewBillDetail
             // 
@@ -1067,6 +1119,7 @@ namespace shop_qr.View.Bill
             this.buttonCancelBill.TextMarginLeft = 0;
             this.buttonCancelBill.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonCancelBill.UseDefaultRadiusAndThickness = true;
+            this.buttonCancelBill.Click += new System.EventHandler(this.buttonCancelBill_Click);
             // 
             // s
             // 
@@ -1156,6 +1209,7 @@ namespace shop_qr.View.Bill
             this.s.TextMarginLeft = 0;
             this.s.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.s.UseDefaultRadiusAndThickness = true;
+            this.s.Click += new System.EventHandler(this.s_Click);
             // 
             // bunifuLabel8
             // 
@@ -1217,10 +1271,10 @@ namespace shop_qr.View.Bill
             this.panel13.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelQRScannerInBill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRScannerInBill)).EndInit();
             this.panelCustomerProfile.ResumeLayout(false);
             this.panelCustomerProfile.PerformLayout();
+            this.panelQRScannerInBill.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRScannerInBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductInBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBillDetail)).EndInit();
             this.ResumeLayout(false);

@@ -81,8 +81,13 @@ namespace shop_qr.View
         private void timerPickerInHistory_Tick(object sender, EventArgs e)
         {
             BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)pictureBoxQRScannerInBill.Image);
-            if (result != null)
+            Bitmap bitmap = (Bitmap)pictureBoxQRScannerInBill.Image;
+            if (bitmap == null)
+            {
+                return;
+            }
+
+            Result result = Reader.Decode(bitmap); if (result != null)
             {
                 labelCustomerNameInHistory.Text = result.ToString();
                 videoCaptureDeviceInHistory.Stop();
