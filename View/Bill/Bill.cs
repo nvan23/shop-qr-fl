@@ -136,20 +136,5 @@ namespace shop_qr.View.Bill
             }
                 
         }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            if (panelQRScannerInBill.Visible == false)
-            {
-                panelCustomerProfile.Visible = false;
-                panelQRScannerInBill.Visible = true;
-            }
-            else
-            {
-                panelCustomerProfile.Visible = true;
-                panelQRScannerInBill.Visible = false;
-            }
-
-        }
     }
 }

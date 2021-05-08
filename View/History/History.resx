@@ -117,36 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="bunifuLabel46.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
-  </data>
-  <metadata name="dataGridViewTextBoxColumn10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn11.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn12.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn13.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="billDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Customer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
-  </data>
   <data name="labelCustomerId.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
   </data>
@@ -186,6 +156,47 @@
   </data>
   <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <data name="buttonCancel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAWAAAAAiCAYAAABhhgOfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVHhe7dTBCQMxEATBS1fsR/k6jAvARg5C/amCgYmg
+        n733Z631NTOzezvtfc4B4K7TXgEGCAgwQESAASICDBARYICIAANEBBggIsAAEQEGiAgwQESAASICDBAR
+        YICIAANEBBggIsAAEQEGiAgwQESAASICDBARYICIAANEBBggIsAAEQEGiAgwQESAASICDBARYICIAANE
+        BBgg8g/wzLznmJnZvc3M+wNPaglyeB/ovQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancel.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAmRJREFUSEul
+        lstrE1EYxdOdooLi+1HQ4Av/FsGiC8GFhhCSjEloInGh/4cgunChUFFUUJT6L7ix2laromsfm1JdaKyP
+        35meCc1kZjqhBw4z9/vO+b7JnTv3ppCFarW69yIIguA5fAO/mbqfrtfrAek9lucHpnHMNyjSg//WYA/9
+        dfT7bc8GwjOYftj8E96mwGmuRbjNLEpH/A730kj7HU64TDIwdBD9lYEC9+FBp1LRbDYPoX8gD/xDjUmn
+        BtFoNE5JYOHXSqWy26lc8MMtqwYPdtLhFbRarQMkllQc4Wdd4fyoTfBctndRC8ThcN5vKUHxhyR2cD9j
+        4Ry5XZblwRieJ/beDCOaZwaaml+wqNh6mtRqtSN4tPqWeeBxzd2kC01ZE8JNXjk3O0oT9Pfkw9PUYFoD
+        Gp11vo94E97VTqcygfacPc80+KABDQ47P4B2u72V/Asb3rEs9zmVCnTHrF/QQB+IGmx2fgijNimXy1us
+        XVKD8KvtdrubnE+Epoc5fS2trlnTFW/wXgM+tKPOpyL2SxbSfgnv7rg0zMpbNUh9yUnQakI/Kw+c0UJw
+        qg/i4Uum5tPUZZoFN5mzb6gJsWiZBokfWh5oG0Hfb8IUb1d81YfWo/HKdkGTcKuAjxiOhcEccJN5e1+q
+        CdfHGlPzmmWDmx286nAuxJp88XVxaKMkOAE1VToPrjicC26io1TFh7frCCQvwZEOHLQ66foHDmw7lQyK
+        xo/MKVbaeV7eiVKptKHT6WzUPfEL8C7U4pB27SMzAgWjQ/+3zVkc7dBfDS0zzNHflk9Qv0j8qBhFg/5S
+        TESh8B8xvgOyK+QnSgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="buttonCancelCustomer.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAmRJREFUSEul
+        lstrE1EYxdOdooLi+1HQ4Av/FsGiC8GFhhCSjEloInGh/4cgunChUFFUUJT6L7ix2laromsfm1JdaKyP
+        35meCc1kZjqhBw4z9/vO+b7JnTv3ppCFarW69yIIguA5fAO/mbqfrtfrAek9lucHpnHMNyjSg//WYA/9
+        dfT7bc8GwjOYftj8E96mwGmuRbjNLEpH/A730kj7HU64TDIwdBD9lYEC9+FBp1LRbDYPoX8gD/xDjUmn
+        BtFoNE5JYOHXSqWy26lc8MMtqwYPdtLhFbRarQMkllQc4Wdd4fyoTfBctndRC8ThcN5vKUHxhyR2cD9j
+        4Ry5XZblwRieJ/beDCOaZwaaml+wqNh6mtRqtSN4tPqWeeBxzd2kC01ZE8JNXjk3O0oT9Pfkw9PUYFoD
+        Gp11vo94E97VTqcygfacPc80+KABDQ47P4B2u72V/Asb3rEs9zmVCnTHrF/QQB+IGmx2fgijNimXy1us
+        XVKD8KvtdrubnE+Epoc5fS2trlnTFW/wXgM+tKPOpyL2SxbSfgnv7rg0zMpbNUh9yUnQakI/Kw+c0UJw
+        qg/i4Uum5tPUZZoFN5mzb6gJsWiZBokfWh5oG0Hfb8IUb1d81YfWo/HKdkGTcKuAjxiOhcEccJN5e1+q
+        CdfHGlPzmmWDmx286nAuxJp88XVxaKMkOAE1VToPrjicC26io1TFh7frCCQvwZEOHLQ66foHDmw7lQyK
+        xo/MKVbaeV7eiVKptKHT6WzUPfEL8C7U4pB27SMzAgWjQ/+3zVkc7dBfDS0zzNHflk9Qv0j8qBhFg/5S
+        TESh8B8xvgOyK+QnSgAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="bunifuSeparator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -278,6 +289,36 @@
   <data name="bunifuLabel17.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
   </data>
+  <data name="bunifuLabel46.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn11.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn12.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn13.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="billDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Customer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="timerPickerInHistory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
