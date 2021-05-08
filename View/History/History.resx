@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bunifuLabel46.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn11.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn12.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn13.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewButtonColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="dataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -173,22 +191,26 @@
         cdG3fAGBsUkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuLabel46.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(105, 105, 105); text-align: left; }</value>
+  <data name="buttonGetCustomerInfoInHistory.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAE8SURBVFhH7ZbNbcJAFITdBRda4A4XTrRAF7nQSC65RhRAC5TDhRYiJZiZzYxlfh4sNpaR8CeN
+        9DSeZx4r72qLgYFzyrJcQz/QOfS+FWNumdx/lrKz+0MQ+kvx6/wqdmuArP4QBckO2kisE4oxN4X8fCo7
+        uz9EObKRRY8vScgKUYw06n+pAfbQVmKdUIy5OeTnc9nZ/SHI9P4RchsdUvwUernb8G7/QAiWiUtLzWTR
+        m9mXRW9sj7Xs7P4QhMzNbYSSLzT1wUy35wDKzgZYSBNZ9Cb2ZdEb2YO+IO95ex81j/VJ/1PBi7NXqBPw
+        A88bAOG29wHT+BtoexSb1rvgkfvACuJAlL3Pmsc6+WqPQchk/wPYF89RXl2hu6iB9D7AI/eBap/XPJ4N
+        9qpzQu0xCPX+Eba9D5hmAwy8GUVxBKAGad+8EuCBAAAAAElFTkSuQmCC
+</value>
   </data>
-  <metadata name="dataGridViewTextBoxColumn10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn11.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn12.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn13.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewButtonColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="buttonGetCustomerInfoInHistory.OnIdleState.IconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAE8SURBVFhH7ZbNbcJAFITdBRda4A4XTrRAF7nQSC65RhRAC5TDhRYiJZiZzYxlfh4sNpaR8CeN
+        9DSeZx4r72qLgYFzyrJcQz/QOfS+FWNumdx/lrKz+0MQ+kvx6/wqdmuArP4QBckO2kisE4oxN4X8fCo7
+        uz9EObKRRY8vScgKUYw06n+pAfbQVmKdUIy5OeTnc9nZ/SHI9P4RchsdUvwUernb8G7/QAiWiUtLzWTR
+        m9mXRW9sj7Xs7P4QhMzNbYSSLzT1wUy35wDKzgZYSBNZ9Cb2ZdEb2YO+IO95ex81j/VJ/1PBi7NXqBPw
+        A88bAOG29wHT+BtoexSb1rvgkfvACuJAlL3Pmsc6+WqPQchk/wPYF89RXl2hu6iB9D7AI/eBap/XPJ4N
+        9qpzQu0xCPX+Eba9D5hmAwy8GUVxBKAGad+8EuCBAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

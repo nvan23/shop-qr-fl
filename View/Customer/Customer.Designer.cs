@@ -360,7 +360,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.ForeColor = System.Drawing.Color.DimGray;
             this.buttonCancelCustomer.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCancelCustomer.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonCancelCustomer.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonCancelCustomer.IconLeftPadding = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.buttonCancelCustomer.IconMarginLeft = 11;
             this.buttonCancelCustomer.IconPadding = 10;
             this.buttonCancelCustomer.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -371,7 +371,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.IdleBorderRadius = 1;
             this.buttonCancelCustomer.IdleBorderThickness = 1;
             this.buttonCancelCustomer.IdleFillColor = System.Drawing.Color.White;
-            this.buttonCancelCustomer.IdleIconLeftImage = null;
+            this.buttonCancelCustomer.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelCustomer.IdleIconLeftImage")));
             this.buttonCancelCustomer.IdleIconRightImage = null;
             this.buttonCancelCustomer.IndicateFocus = false;
             this.buttonCancelCustomer.Location = new System.Drawing.Point(0, 0);
@@ -398,7 +398,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.OnIdleState.BorderThickness = 1;
             this.buttonCancelCustomer.OnIdleState.FillColor = System.Drawing.Color.White;
             this.buttonCancelCustomer.OnIdleState.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonCancelCustomer.OnIdleState.IconLeftImage = null;
+            this.buttonCancelCustomer.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelCustomer.OnIdleState.IconLeftImage")));
             this.buttonCancelCustomer.OnIdleState.IconRightImage = null;
             this.buttonCancelCustomer.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonCancelCustomer.OnPressedState.BorderRadius = 1;
@@ -413,7 +413,7 @@ namespace shop_qr.View.Customer
             this.buttonCancelCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonCancelCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonCancelCustomer.TextMarginLeft = 0;
-            this.buttonCancelCustomer.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonCancelCustomer.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonCancelCustomer.UseDefaultRadiusAndThickness = true;
             this.buttonCancelCustomer.Click += new System.EventHandler(this.buttonCancelCustomer_Click);
             // 
@@ -451,9 +451,9 @@ namespace shop_qr.View.Customer
             this.buttonSaveCustomer.ForeColor = System.Drawing.Color.White;
             this.buttonSaveCustomer.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSaveCustomer.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonSaveCustomer.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonSaveCustomer.IconLeftPadding = new System.Windows.Forms.Padding(65, 3, 3, 3);
             this.buttonSaveCustomer.IconMarginLeft = 11;
-            this.buttonSaveCustomer.IconPadding = 10;
+            this.buttonSaveCustomer.IconPadding = 8;
             this.buttonSaveCustomer.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonSaveCustomer.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.buttonSaveCustomer.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
@@ -462,7 +462,7 @@ namespace shop_qr.View.Customer
             this.buttonSaveCustomer.IdleBorderRadius = 1;
             this.buttonSaveCustomer.IdleBorderThickness = 1;
             this.buttonSaveCustomer.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.buttonSaveCustomer.IdleIconLeftImage = null;
+            this.buttonSaveCustomer.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSaveCustomer.IdleIconLeftImage")));
             this.buttonSaveCustomer.IdleIconRightImage = null;
             this.buttonSaveCustomer.IndicateFocus = false;
             this.buttonSaveCustomer.Location = new System.Drawing.Point(147, 0);
@@ -490,7 +490,7 @@ namespace shop_qr.View.Customer
             this.buttonSaveCustomer.OnIdleState.BorderThickness = 1;
             this.buttonSaveCustomer.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.buttonSaveCustomer.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.buttonSaveCustomer.OnIdleState.IconLeftImage = null;
+            this.buttonSaveCustomer.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSaveCustomer.OnIdleState.IconLeftImage")));
             this.buttonSaveCustomer.OnIdleState.IconRightImage = null;
             this.buttonSaveCustomer.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonSaveCustomer.OnPressedState.BorderRadius = 1;
@@ -505,7 +505,7 @@ namespace shop_qr.View.Customer
             this.buttonSaveCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonSaveCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonSaveCustomer.TextMarginLeft = 0;
-            this.buttonSaveCustomer.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonSaveCustomer.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonSaveCustomer.UseDefaultRadiusAndThickness = true;
             this.buttonSaveCustomer.Click += new System.EventHandler(this.buttonSaveCustomer_Click);
             // 

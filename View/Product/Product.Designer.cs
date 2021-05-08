@@ -373,7 +373,7 @@ namespace shop_qr.View.Product
             this.buttonCancelProduct.ForeColor = System.Drawing.Color.DimGray;
             this.buttonCancelProduct.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCancelProduct.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonCancelProduct.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonCancelProduct.IconLeftPadding = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.buttonCancelProduct.IconMarginLeft = 11;
             this.buttonCancelProduct.IconPadding = 10;
             this.buttonCancelProduct.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -384,7 +384,7 @@ namespace shop_qr.View.Product
             this.buttonCancelProduct.IdleBorderRadius = 1;
             this.buttonCancelProduct.IdleBorderThickness = 1;
             this.buttonCancelProduct.IdleFillColor = System.Drawing.Color.White;
-            this.buttonCancelProduct.IdleIconLeftImage = null;
+            this.buttonCancelProduct.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelProduct.IdleIconLeftImage")));
             this.buttonCancelProduct.IdleIconRightImage = null;
             this.buttonCancelProduct.IndicateFocus = false;
             this.buttonCancelProduct.Location = new System.Drawing.Point(0, 0);
@@ -411,7 +411,7 @@ namespace shop_qr.View.Product
             this.buttonCancelProduct.OnIdleState.BorderThickness = 1;
             this.buttonCancelProduct.OnIdleState.FillColor = System.Drawing.Color.White;
             this.buttonCancelProduct.OnIdleState.ForeColor = System.Drawing.Color.DimGray;
-            this.buttonCancelProduct.OnIdleState.IconLeftImage = null;
+            this.buttonCancelProduct.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelProduct.OnIdleState.IconLeftImage")));
             this.buttonCancelProduct.OnIdleState.IconRightImage = null;
             this.buttonCancelProduct.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonCancelProduct.OnPressedState.BorderRadius = 1;
@@ -426,7 +426,7 @@ namespace shop_qr.View.Product
             this.buttonCancelProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonCancelProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonCancelProduct.TextMarginLeft = 0;
-            this.buttonCancelProduct.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonCancelProduct.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonCancelProduct.UseDefaultRadiusAndThickness = true;
             // 
             // buttonSaveProduct
@@ -463,9 +463,9 @@ namespace shop_qr.View.Product
             this.buttonSaveProduct.ForeColor = System.Drawing.Color.White;
             this.buttonSaveProduct.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSaveProduct.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.buttonSaveProduct.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonSaveProduct.IconLeftPadding = new System.Windows.Forms.Padding(65, 3, 3, 3);
             this.buttonSaveProduct.IconMarginLeft = 11;
-            this.buttonSaveProduct.IconPadding = 10;
+            this.buttonSaveProduct.IconPadding = 8;
             this.buttonSaveProduct.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonSaveProduct.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.buttonSaveProduct.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
@@ -474,7 +474,7 @@ namespace shop_qr.View.Product
             this.buttonSaveProduct.IdleBorderRadius = 1;
             this.buttonSaveProduct.IdleBorderThickness = 1;
             this.buttonSaveProduct.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.buttonSaveProduct.IdleIconLeftImage = null;
+            this.buttonSaveProduct.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSaveProduct.IdleIconLeftImage")));
             this.buttonSaveProduct.IdleIconRightImage = null;
             this.buttonSaveProduct.IndicateFocus = false;
             this.buttonSaveProduct.Location = new System.Drawing.Point(147, 0);
@@ -502,7 +502,7 @@ namespace shop_qr.View.Product
             this.buttonSaveProduct.OnIdleState.BorderThickness = 1;
             this.buttonSaveProduct.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.buttonSaveProduct.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.buttonSaveProduct.OnIdleState.IconLeftImage = null;
+            this.buttonSaveProduct.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("buttonSaveProduct.OnIdleState.IconLeftImage")));
             this.buttonSaveProduct.OnIdleState.IconRightImage = null;
             this.buttonSaveProduct.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.buttonSaveProduct.OnPressedState.BorderRadius = 1;
@@ -517,7 +517,7 @@ namespace shop_qr.View.Product
             this.buttonSaveProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonSaveProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonSaveProduct.TextMarginLeft = 0;
-            this.buttonSaveProduct.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonSaveProduct.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonSaveProduct.UseDefaultRadiusAndThickness = true;
             this.buttonSaveProduct.Click += new System.EventHandler(this.buttonSaveProduct_Click);
             // 
