@@ -48,7 +48,7 @@ namespace shop_qr.View.Product
             {
                 Model.Product row = dataGridViewProduct.Rows[e.RowIndex].DataBoundItem as Model.Product;
                 this.Name = row.Name;
-                this.Price = row.Price.ToString();
+                this.Price = ((long)row.Price).ToString();
                 this.Id = row.Id.ToString();
             }
         }
@@ -63,6 +63,13 @@ namespace shop_qr.View.Product
             presenter.Delete();
             this.Id = "";
             presenter.Read();
+        }
+
+        private void buttonCancelProduct_Click(object sender, EventArgs e)
+        {
+            this.Id = "";
+            this.Name = "";
+            this.Price = "";
         }
     }
 }

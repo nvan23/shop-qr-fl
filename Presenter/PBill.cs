@@ -40,7 +40,7 @@ namespace shop_qr.Presenter
         public void CalculateTotal()
         {
             
-            int sum = 0;
+            long sum = 0;
             List<Model.MProductBill> list = view.BillDetails;
             foreach (Model.MProductBill p in list)
             {
@@ -48,7 +48,7 @@ namespace shop_qr.Presenter
             }
             view.Tax = ((int)(sum * 0.1));
             view.Total = sum;
-            view.Pay = sum + (int)(sum * 0.1);
+            view.Pay = sum + (long)(sum * 0.1);
         }
         public void Search()
         {

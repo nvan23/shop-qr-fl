@@ -5,9 +5,9 @@ namespace shop_qr.View
 {
     interface IBill
     {
-        int Total { get; set; }
-        int Tax { get; set; }
-        int Pay { get; set; }
+        long Total { get; set; }
+        long Tax { get; set; }
+        long Pay { get; set; }
         List<Model.Product> Products { get; set; }
         List<MProductBill> BillDetails { get; set; }
         string Search { get; set; }

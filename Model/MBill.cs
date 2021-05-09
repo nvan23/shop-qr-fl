@@ -45,14 +45,13 @@ namespace shop_qr.Model
         {
             DataShopDataContext db = new DataShopDataContext();
             List<Bill> list = db.Bills.ToList<Bill>();
-            Console.WriteLine("asdasdsadasdsd",list.Count);
             return list;
 
         }        
-        public static List<Bill> ReadByCustomer(Customer customer)
+        public static List<Bill> ReadByCustomerId(int Id)
         {
             DataShopDataContext db = new DataShopDataContext();
-            List<Bill> list = db.Bills.Where(b=>b.CustomerId == customer.Id).ToList();
+            List<Bill> list = db.Bills.Where(b=>b.CustomerId == Id).ToList();
             return list;
         }
         public static List<MProductBill> ReadDetail(int Id)
@@ -72,7 +71,7 @@ namespace shop_qr.Model
                 m.ProductId = b.ProductId.ToString();
                 m.ProductName = db.Products.FirstOrDefault<Product>(p => p.Id == b.ProductId).Name;
                 m.Quantity = (int)b.Quantity;
-                m.Price = (int)b.ProductPrice;
+                m.Price = (long)b.ProductPrice;
                 r.Add(m);
             }
             return r;

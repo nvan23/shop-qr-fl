@@ -29,7 +29,11 @@ namespace shop_qr.View
 
         FilterInfoCollection filterInfoCollectionInHistory;
         VideoCaptureDevice videoCaptureDeviceInHistory;
-
+       
+        public long Total { get => Int64.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
+        public long Tax { get => Int64.Parse(labelTaxInBill.Text); set => labelTaxInBill.Text = value.ToString(); }
+        public long Pay { get => Int64.Parse(labelPayInBill.Text); set => labelPayInBill.Text = value.ToString(); }
+        public string CustomerId { get => labelCustomerId.Text; set => labelCustomerId.Text = value; }
         public string CustomerName { get => labelCustomerNameInHistory.Text; set => labelCustomerNameInHistory.Text = value.ToString(); }
         public string CustomerPhone { get => labelCustomerPhoneInHistory.Text; set => labelCustomerPhoneInHistory.Text = value.ToString(); }
         public List<Model.Bill> Bills { get => (List<Model.Bill>)dataGridViewBillHistory.DataSource; set => dataGridViewBillHistory.DataSource = value; }
@@ -40,8 +44,11 @@ namespace shop_qr.View
             if (e.RowIndex >= 0)
             {
                 Model.Bill row = dataGridViewBillHistory.Rows[e.RowIndex].DataBoundItem as Model.Bill;
-                Console.WriteLine("ROw id " + row.Id);
                 presenter.ReadDetail(row.Id);
+                presenter.CalculateTotal();
+                presenter.GetCustomerById((int)row.CustomerId);
+                presenter.ReadByCustomerId((int)row.CustomerId);
+                Details = new List<Model.MProductBill>();
             }
         }
 
@@ -76,7 +83,8 @@ namespace shop_qr.View
 
             Result result = Reader.Decode(bitmap); if (result != null)
             {
-                labelCustomerNameInHistory.Text = result.ToString();
+                presenter.GetCustomerById(Int32.Parse(result.Text));
+                presenter.ReadByCustomerId(Int32.Parse(result.Text));
                 videoCaptureDeviceInHistory.Stop();
                 panelQRScannerInHistory.Visible = false;
                 panelCustomerProfileInHistory.Visible = true;
@@ -89,6 +97,12 @@ namespace shop_qr.View
             videoCaptureDeviceInHistory.Stop();
             panelQRScannerInHistory.Visible = false;
             panelCustomerProfileInHistory.Visible = true;
+            CustomerId = "";
+            CustomerName = "";
+            CustomerPhone = "";
+            Details = new List<Model.MProductBill>();
+            presenter.Read();
+
         }
 
         private void panelCustomerProfile_Paint(object sender, PaintEventArgs e)

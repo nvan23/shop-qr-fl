@@ -18,14 +18,23 @@ namespace shop_qr.View
         public Login()
         {
             InitializeComponent();
-            Username = "nvan23";
-            Password = "123";
+       
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            Presenter.PManager presenter = new Presenter.PManager(this);
+            
             this.Hide();
-            new AppLayout().Show();
+            if (!presenter.Verify())
+            {
+                new AppLayout().Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản không hợp lệ", "Lỗi");
+            }
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

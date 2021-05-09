@@ -200,12 +200,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataShop.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Model\MManger.cs" />
     <Compile Include="Model\MProductBill.cs" />
     <Compile Include="Model\MBill.cs" />
     <Compile Include="Model\MProduct.cs" />
     <Compile Include="Model\MCustomer.cs" />
     <Compile Include="Presenter\PHistory.cs" />
     <Compile Include="Presenter\PBill.cs" />
+    <Compile Include="Presenter\PManager.cs" />
     <Compile Include="Presenter\PProduct.cs" />
     <Compile Include="Presenter\PCustomer.cs" />
     <Compile Include="Product.Designer.cs">

@@ -10,7 +10,7 @@ namespace shop_qr.Model
     {
         public string ProductId { get; set; }
         public string ProductName { get; set; }
-        public int Price { get; set; }
+        public long Price { get; set; }
         public int Quantity { get; set; }
     }
 }

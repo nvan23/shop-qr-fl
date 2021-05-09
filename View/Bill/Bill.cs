@@ -33,9 +33,9 @@ namespace shop_qr.View.Bill
         FilterInfoCollection filterInfoCollectionInBill;
         VideoCaptureDevice videoCaptureDeviceInBill;
 
-        public int Total { get => Int32.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
-        public int Tax { get => Int32.Parse(labelTaxInBill.Text); set => labelTaxInBill.Text = value.ToString(); }
-        public int Pay { get => Int32.Parse(labelPayInBill.Text); set => labelPayInBill.Text = value.ToString(); }
+        public long Total { get => Int64.Parse(labelTotalInBill.Text); set => labelTotalInBill.Text = value.ToString(); }
+        public long Tax { get => Int64.Parse(labelTaxInBill.Text); set => labelTaxInBill.Text = value.ToString(); }
+        public long Pay { get => Int64.Parse(labelPayInBill.Text); set => labelPayInBill.Text = value.ToString(); }
         public List<MProductBill> BillDetails { get => (List<MProductBill>)dataGridViewBillDetail.DataSource; set => dataGridViewBillDetail.DataSource = value; }
         public string FullName { get => labelCustomerNameInBill.Text; set => labelCustomerNameInBill.Text = value.ToString(); }
         public string Phone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
@@ -47,7 +47,15 @@ namespace shop_qr.View.Bill
         public string CustomerPhone { get => labelCustomerPhoneInBill.Text; set => labelCustomerPhoneInBill.Text = value.ToString(); }
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
+            try
+            {
+                pictureBoxQRScannerInBill.Image = (Bitmap)eventArgs.Frame.Clone();
+
+            }
+            catch (Exception e)
+            {
+
+            }
         }
 
         private void buttonGetCustomerInfoInBill_Click(object sender, EventArgs e)
@@ -82,7 +90,7 @@ namespace shop_qr.View.Bill
             {
                 MProductBill billDetail = new MProductBill();
                 billDetail.ProductId = row.Id.ToString();
-                billDetail.Price = (int)row.Price;
+                billDetail.Price = (long)row.Price;
                 billDetail.ProductName = row.Name;
                 billDetail.Quantity = 1;
                 arr.Add(billDetail);
@@ -106,6 +114,7 @@ namespace shop_qr.View.Bill
         private void s_Click(object sender, EventArgs e)
         {
             presenter.Create();
+            presenter.CalculateTotal();
         }
 
         private void formBill_Load(object sender, EventArgs e)

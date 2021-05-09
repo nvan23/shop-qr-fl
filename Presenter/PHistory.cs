@@ -18,9 +18,32 @@ namespace shop_qr.Presenter
         {
             view.Bills = Model.MBill.Read();
         }
+        public void ReadByCustomerId(int Id)
+        {
+            view.Bills = Model.MBill.ReadByCustomerId(Id);
+        }
         public void ReadDetail(int Id)
         {
             view.Details = Model.MBill.ReadDetail(Id);
+        }
+        public void CalculateTotal()
+        {
+            long sum = 0;
+            List<Model.MProductBill> list = view.Details;
+            foreach (Model.MProductBill p in list)
+            {
+                sum += p.Quantity * p.Price;
+            }
+            view.Tax = ((int)(sum * 0.1));
+            view.Total = sum;
+            view.Pay = sum + (long)(sum * 0.1);
+        }
+        public void GetCustomerById(int Id)
+        {
+            Model.Customer customer = Model.MCustomer.GetById(Id);
+            view.CustomerId = customer.Id.ToString();
+            view.CustomerName = customer.FullName;
+            view.CustomerPhone = customer.Phone;
         }
 
     }
