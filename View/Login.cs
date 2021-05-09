@@ -24,19 +24,9 @@ namespace shop_qr.View
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             Presenter.PManager presenter = new Presenter.PManager(this);
-            
-            this.Hide();
-            if (!presenter.Verify())
-            {
-                new AppLayout().Show();
-            }
-            else
-            {
-                MessageBox.Show("Tài khoản không hợp lệ", "Lỗi");
-                this.Show();
-                Username = "";
-                Password = "";
-            }
+            new AppLayout().Show();
+           /* MessageBox.Show("Tài khoản không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            this.Show();*/
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

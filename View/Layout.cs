@@ -81,6 +81,9 @@ namespace shop_qr.View
         {
             indicator.Top = ((Control)sender).Top;
             indicator.BackColor = Color.FromArgb(220, 20, 60);
+
+            this.Hide();
+            new View.Login().ShowDialog();
         }
     }
 }
