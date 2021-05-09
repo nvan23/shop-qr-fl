@@ -29,11 +29,13 @@ namespace shop_qr.View
             if (!presenter.Verify())
             {
                 new AppLayout().Show();
-
             }
             else
             {
                 MessageBox.Show("Tài khoản không hợp lệ", "Lỗi");
+                this.Show();
+                Username = "";
+                Password = "";
             }
         }
 

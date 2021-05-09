@@ -36,10 +36,10 @@ namespace shop_qr.View
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.formHistory = new System.Windows.Forms.Panel();
             this.buttonCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonGetCustomerInfoInHistory = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -74,6 +74,10 @@ namespace shop_qr.View
             this.bunifuLabel17 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.dataGridViewBillDetailHistory = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel22 = new System.Windows.Forms.Panel();
             this.bunifuLabel46 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel21 = new System.Windows.Forms.Panel();
@@ -84,10 +88,6 @@ namespace shop_qr.View
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timerPickerInHistory = new System.Windows.Forms.Timer(this.components);
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.formHistory.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelCustomerProfileInHistory.SuspendLayout();
@@ -322,7 +322,7 @@ namespace shop_qr.View
             this.panelCustomerProfileInHistory.Controls.Add(this.bunifuLabel5);
             this.panelCustomerProfileInHistory.Location = new System.Drawing.Point(0, 41);
             this.panelCustomerProfileInHistory.Name = "panelCustomerProfileInHistory";
-            this.panelCustomerProfileInHistory.Size = new System.Drawing.Size(341, 337);
+            this.panelCustomerProfileInHistory.Size = new System.Drawing.Size(351, 337);
             this.panelCustomerProfileInHistory.TabIndex = 40;
             this.panelCustomerProfileInHistory.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCustomerProfile_Paint);
             // 
@@ -809,6 +809,39 @@ namespace shop_qr.View
             this.dataGridViewBillDetailHistory.TabIndex = 6;
             this.dataGridViewBillDetailHistory.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "ProductId";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Mã SP";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "ProductName";
+            this.dataGridViewTextBoxColumn11.FillWeight = 150F;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Tên SP";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn12.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn12.HeaderText = "Số lượng";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Price";
+            dataGridViewCellStyle3.Format = "C0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn13.HeaderText = "Giá";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
             // panel22
             // 
             this.panel22.Controls.Add(this.bunifuLabel46);
@@ -961,39 +994,6 @@ namespace shop_qr.View
             // 
             this.timerPickerInHistory.Interval = 1000;
             this.timerPickerInHistory.Tick += new System.EventHandler(this.timerPickerInHistory_Tick);
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "ProductId";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Mã SP";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "ProductName";
-            this.dataGridViewTextBoxColumn11.FillWeight = 150F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "Tên SP";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn12.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn12.HeaderText = "Số lượng";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Price";
-            dataGridViewCellStyle3.Format = "C0";
-            dataGridViewCellStyle3.NullValue = "0";
-            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn13.HeaderText = "Giá";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
             // 
             // History
             // 

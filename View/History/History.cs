@@ -78,6 +78,9 @@ namespace shop_qr.View
             Bitmap bitmap = (Bitmap)pictureBoxQRScannerInHistory.Image;
             if (bitmap == null)
             {
+                CustomerId = "";
+                CustomerName = "";
+                CustomerPhone = "";
                 return;
             }
 
@@ -95,11 +98,11 @@ namespace shop_qr.View
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             videoCaptureDeviceInHistory.Stop();
-            panelQRScannerInHistory.Visible = false;
-            panelCustomerProfileInHistory.Visible = true;
             CustomerId = "";
             CustomerName = "";
             CustomerPhone = "";
+            panelQRScannerInHistory.Visible = false;
+            panelCustomerProfileInHistory.Visible = true;
             Details = new List<Model.MProductBill>();
             presenter.Read();
 

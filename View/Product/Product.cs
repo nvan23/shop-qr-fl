@@ -62,6 +62,8 @@ namespace shop_qr.View.Product
         {
             presenter.Delete();
             this.Id = "";
+            this.Name = "";
+            this.Price = "";
             presenter.Read();
         }
 

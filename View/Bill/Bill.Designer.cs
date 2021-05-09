@@ -34,6 +34,7 @@ namespace shop_qr.View.Bill
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -46,7 +47,6 @@ namespace shop_qr.View.Bill
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.product = new shop_qr.Product();
@@ -81,6 +81,9 @@ namespace shop_qr.View.Bill
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dataGridViewProductInBill = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.IdProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PriceProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxSearchProductInBill = new Bunifu.UI.WinForms.BunifuTextBox();
             this.buttonSearchProductInBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dataGridViewBillDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -89,9 +92,6 @@ namespace shop_qr.View.Bill
             this.buttonCancelBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.s = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.IdProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PriceProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,9 +171,8 @@ namespace shop_qr.View.Bill
             this.labelTotalInBill.Location = new System.Drawing.Point(273, 55);
             this.labelTotalInBill.Name = "labelTotalInBill";
             this.labelTotalInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTotalInBill.Size = new System.Drawing.Size(69, 21);
+            this.labelTotalInBill.Size = new System.Drawing.Size(0, 0);
             this.labelTotalInBill.TabIndex = 74;
-            this.labelTotalInBill.Text = "3,450,000";
             this.labelTotalInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.labelTotalInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -204,9 +203,8 @@ namespace shop_qr.View.Bill
             this.labelPayInBill.Location = new System.Drawing.Point(272, 159);
             this.labelPayInBill.Name = "labelPayInBill";
             this.labelPayInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelPayInBill.Size = new System.Drawing.Size(69, 21);
+            this.labelPayInBill.Size = new System.Drawing.Size(0, 0);
             this.labelPayInBill.TabIndex = 71;
-            this.labelPayInBill.Text = "3,450,000";
             this.labelPayInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.labelPayInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -252,9 +250,8 @@ namespace shop_qr.View.Bill
             this.labelTaxInBill.Location = new System.Drawing.Point(272, 106);
             this.labelTaxInBill.Name = "labelTaxInBill";
             this.labelTaxInBill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTaxInBill.Size = new System.Drawing.Size(69, 21);
+            this.labelTaxInBill.Size = new System.Drawing.Size(0, 0);
             this.labelTaxInBill.TabIndex = 68;
-            this.labelTaxInBill.Text = "3,450,000";
             this.labelTaxInBill.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.labelTaxInBill.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -631,6 +628,30 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dataGridViewProductInBill.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductInBill_CellContentClick);
             // 
+            // IdProduct
+            // 
+            this.IdProduct.DataPropertyName = "id";
+            this.IdProduct.HeaderText = "Mã SP";
+            this.IdProduct.Name = "IdProduct";
+            this.IdProduct.ReadOnly = true;
+            // 
+            // NameProduct
+            // 
+            this.NameProduct.DataPropertyName = "name";
+            this.NameProduct.HeaderText = "Tên SP";
+            this.NameProduct.Name = "NameProduct";
+            this.NameProduct.ReadOnly = true;
+            // 
+            // PriceProduct
+            // 
+            this.PriceProduct.DataPropertyName = "Price";
+            dataGridViewCellStyle3.Format = "C0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.PriceProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PriceProduct.HeaderText = "Giá";
+            this.PriceProduct.Name = "PriceProduct";
+            this.PriceProduct.ReadOnly = true;
+            // 
             // textBoxSearchProductInBill
             // 
             this.textBoxSearchProductInBill.AcceptsReturn = false;
@@ -855,13 +876,13 @@ namespace shop_qr.View.Bill
             this.dataGridViewBillDetail.HeaderForeColor = System.Drawing.Color.White;
             this.dataGridViewBillDetail.Location = new System.Drawing.Point(5, 352);
             this.dataGridViewBillDetail.Name = "dataGridViewBillDetail";
-            this.dataGridViewBillDetail.ReadOnly = true;
             this.dataGridViewBillDetail.RowHeadersVisible = false;
             this.dataGridViewBillDetail.RowTemplate.Height = 40;
             this.dataGridViewBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewBillDetail.Size = new System.Drawing.Size(586, 350);
             this.dataGridViewBillDetail.TabIndex = 43;
             this.dataGridViewBillDetail.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridViewBillDetail.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBillDetail_CellEndEdit_1);
             // 
             // bunifuLabel2
             // 
@@ -1239,30 +1260,6 @@ namespace shop_qr.View.Bill
             this.buttonCancel.UseDefaultRadiusAndThickness = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // IdProduct
-            // 
-            this.IdProduct.DataPropertyName = "id";
-            this.IdProduct.HeaderText = "Mã SP";
-            this.IdProduct.Name = "IdProduct";
-            this.IdProduct.ReadOnly = true;
-            // 
-            // NameProduct
-            // 
-            this.NameProduct.DataPropertyName = "name";
-            this.NameProduct.HeaderText = "Tên SP";
-            this.NameProduct.Name = "NameProduct";
-            this.NameProduct.ReadOnly = true;
-            // 
-            // PriceProduct
-            // 
-            this.PriceProduct.DataPropertyName = "Price";
-            dataGridViewCellStyle3.Format = "C0";
-            dataGridViewCellStyle3.NullValue = "0";
-            this.PriceProduct.DefaultCellStyle = dataGridViewCellStyle3;
-            this.PriceProduct.HeaderText = "Giá";
-            this.PriceProduct.Name = "PriceProduct";
-            this.PriceProduct.ReadOnly = true;
-            // 
             // productID
             // 
             this.productID.DataPropertyName = "ProductId";
@@ -1283,7 +1280,6 @@ namespace shop_qr.View.Bill
             this.quantity.FillWeight = 80F;
             this.quantity.HeaderText = "Số lượng";
             this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
             // 
             // prouctPrice
             // 
