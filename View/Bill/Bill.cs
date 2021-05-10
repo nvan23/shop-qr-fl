@@ -160,11 +160,6 @@ namespace shop_qr.View.Bill
 
         private void dataGridViewBillDetail_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void dataGridViewBillDetail_CellEndEdit_1(object sender, DataGridViewCellEventArgs e)
-        {
             presenter.CalculateTotal();
         }
     }

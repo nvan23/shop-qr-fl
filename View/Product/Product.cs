@@ -1,7 +1,13 @@
 ﻿using shop_qr.Presenter;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace shop_qr.View.Product
 {
@@ -19,6 +25,8 @@ namespace shop_qr.View.Product
         public string Name { get => textBoxProductName.Text; set => textBoxProductName.Text = value.ToString(); }
         public string Price { get => textBoxProductPrice.Text; set => textBoxProductPrice.Text = value.ToString(); }
         public List<Model.Product> Products { get => (List<Model.Product>)dataGridViewProduct.DataSource; set => dataGridViewProduct.DataSource = value; }
+        public Bitmap ProductImage { get => (Bitmap)pictureBoxProductImage.Image; set => pictureBoxProductImage.Image = value; }
+        public string ProductImagePath { get => textBoxProductImagePath.Text; set => textBoxProductImagePath.Text = value.ToString(); }
 
         private void buttonSaveProduct_Click(object sender, EventArgs e)
         {
@@ -64,6 +72,8 @@ namespace shop_qr.View.Product
             this.Id = "";
             this.Name = "";
             this.Price = "";
+            this.ProductImage = null;
+            this.ProductImagePath = "";
             presenter.Read();
         }
 
@@ -72,6 +82,34 @@ namespace shop_qr.View.Product
             this.Id = "";
             this.Name = "";
             this.Price = "";
+            this.ProductImage = null;
+            this.ProductImagePath = "";
+            buttonUploadProductImage.Text = "Thêm hình ảnh";
+        }
+
+        private void buttonUploadProductImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // open file dialog
+                OpenFileDialog open = new OpenFileDialog();
+                // image filters
+                open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    // display image in picture box
+                    ProductImage = new Bitmap(open.FileName);
+                    // image file path
+                    ProductImagePath = open.FileName;
+
+                    buttonUploadProductImage.Text = "Đổi ảnh";
+                }
+            }
+            catch (Exception)
+            {
+                throw new ApplicationException("Hình ảnh không thể hiển thị lúc này");
+            }
         }
     }
 }
