@@ -32,6 +32,7 @@ namespace shop_qr.Model
             }
             _product.Name = product.Name;
             _product.Price = product.Price;
+            _product.Image = product.Image;
             db.SubmitChanges();
         }
 

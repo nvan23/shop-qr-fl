@@ -34,7 +34,6 @@ namespace shop_qr.View.Bill
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -48,6 +47,7 @@ namespace shop_qr.View.Bill
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.product = new shop_qr.Product();
             this.timerQRScannerInBill = new System.Windows.Forms.Timer(this.components);
@@ -81,9 +81,6 @@ namespace shop_qr.View.Bill
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dataGridViewProductInBill = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.IdProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PriceProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxSearchProductInBill = new Bunifu.UI.WinForms.BunifuTextBox();
             this.buttonSearchProductInBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dataGridViewBillDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -96,6 +93,10 @@ namespace shop_qr.View.Bill
             this.buttonCancelBill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.s = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.IdProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PriceProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Image = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
             this.panel13.SuspendLayout();
@@ -584,7 +585,8 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProduct,
             this.NameProduct,
-            this.PriceProduct});
+            this.PriceProduct,
+            this.Image});
             this.dataGridViewProductInBill.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dataGridViewProductInBill.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dataGridViewProductInBill.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -627,30 +629,6 @@ namespace shop_qr.View.Bill
             this.dataGridViewProductInBill.TabIndex = 40;
             this.dataGridViewProductInBill.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dataGridViewProductInBill.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductInBill_CellContentClick);
-            // 
-            // IdProduct
-            // 
-            this.IdProduct.DataPropertyName = "id";
-            this.IdProduct.HeaderText = "Mã SP";
-            this.IdProduct.Name = "IdProduct";
-            this.IdProduct.ReadOnly = true;
-            // 
-            // NameProduct
-            // 
-            this.NameProduct.DataPropertyName = "name";
-            this.NameProduct.HeaderText = "Tên SP";
-            this.NameProduct.Name = "NameProduct";
-            this.NameProduct.ReadOnly = true;
-            // 
-            // PriceProduct
-            // 
-            this.PriceProduct.DataPropertyName = "Price";
-            dataGridViewCellStyle3.Format = "C0";
-            dataGridViewCellStyle3.NullValue = "0";
-            this.PriceProduct.DefaultCellStyle = dataGridViewCellStyle3;
-            this.PriceProduct.HeaderText = "Giá";
-            this.PriceProduct.Name = "PriceProduct";
-            this.PriceProduct.ReadOnly = true;
             // 
             // textBoxSearchProductInBill
             // 
@@ -1291,6 +1269,37 @@ namespace shop_qr.View.Bill
             this.buttonCancel.UseDefaultRadiusAndThickness = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // IdProduct
+            // 
+            this.IdProduct.DataPropertyName = "id";
+            this.IdProduct.HeaderText = "Mã SP";
+            this.IdProduct.Name = "IdProduct";
+            this.IdProduct.ReadOnly = true;
+            // 
+            // NameProduct
+            // 
+            this.NameProduct.DataPropertyName = "name";
+            this.NameProduct.HeaderText = "Tên SP";
+            this.NameProduct.Name = "NameProduct";
+            this.NameProduct.ReadOnly = true;
+            // 
+            // PriceProduct
+            // 
+            this.PriceProduct.DataPropertyName = "Price";
+            dataGridViewCellStyle3.Format = "C0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.PriceProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PriceProduct.HeaderText = "Giá";
+            this.PriceProduct.Name = "PriceProduct";
+            this.PriceProduct.ReadOnly = true;
+            // 
+            // Image
+            // 
+            this.Image.DataPropertyName = "Image";
+            this.Image.HeaderText = "Hình ảnh";
+            this.Image.Name = "Image";
+            this.Image.ReadOnly = true;
+            // 
             // formBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1371,12 +1380,13 @@ namespace shop_qr.View.Bill
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel labelTotalInBill;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonCancel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameProduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PriceProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn productID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn prouctPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PriceProduct;
+        private System.Windows.Forms.DataGridViewImageColumn Image;
     }
 }

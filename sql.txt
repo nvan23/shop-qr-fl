@@ -23,6 +23,7 @@ create table Product (
 	Id int IDENTITY(1,1) PRIMARY KEY,
 	Name varchar(100),
 	Price money,
+	Image varbinary(MAX),
 )
 
 create table BillDetail (

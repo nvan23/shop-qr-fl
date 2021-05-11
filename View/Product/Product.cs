@@ -45,6 +45,8 @@ namespace shop_qr.View.Product
                 this.Id = "";
                 this.Name = "";
                 this.Price = "";
+                this.ProductImage = null;
+                this.ProductImagePath = "";
             }
            
             presenter.Read();
@@ -54,10 +56,13 @@ namespace shop_qr.View.Product
         {
             if (e.RowIndex >= 0)
             {
+               
                 Model.Product row = dataGridViewProduct.Rows[e.RowIndex].DataBoundItem as Model.Product;
                 this.Name = row.Name;
                 this.Price = ((long)row.Price).ToString();
                 this.Id = row.Id.ToString();
+                MemoryStream ms = new MemoryStream(row.Image.ToArray());
+                this.ProductImage = (Bitmap)Bitmap.FromStream(ms);
             }
         }
 
@@ -100,6 +105,7 @@ namespace shop_qr.View.Product
                 {
                     // display image in picture box
                     ProductImage = new Bitmap(open.FileName);
+                    Console.WriteLine("Size of image "+ProductImage.Size);
                     // image file path
                     ProductImagePath = open.FileName;
 

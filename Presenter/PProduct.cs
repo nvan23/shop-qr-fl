@@ -1,5 +1,6 @@
 ﻿using shop_qr.View;
 using System;
+using System.IO;
 
 namespace shop_qr.Presenter
 {
@@ -15,8 +16,12 @@ namespace shop_qr.Presenter
         public void Create()
         {
             Model.Product product = new Model.Product();
+            
             product.Name = view.Name;
             product.Price = Decimal.Parse(view.Price);
+            MemoryStream ms = new MemoryStream();
+            view.ProductImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            product.Image = new System.Data.Linq.Binary(ms.ToArray());
             Model.MProduct.Create(product);
         }
 
@@ -37,6 +42,10 @@ namespace shop_qr.Presenter
                 product.Id = Int32.Parse(view.Id);
                 product.Name = view.Name;
                 product.Price = Decimal.Parse(view.Price);
+
+                MemoryStream ms = new MemoryStream();
+                view.ProductImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                product.Image = new System.Data.Linq.Binary(ms.ToArray());
                 Model.MProduct.Update(product);
 
             }
