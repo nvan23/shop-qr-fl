@@ -1299,6 +1299,7 @@ namespace shop_qr.View.Bill
             this.Image.HeaderText = "Hình ảnh";
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
+            this.Image.Visible = false;
             // 
             // formBill
             // 
