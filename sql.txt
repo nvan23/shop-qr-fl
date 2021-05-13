@@ -1,10 +1,8 @@
 ﻿
 create table Manager (
 	Id int IDENTITY(1,1) PRIMARY KEY,
-	FullName varchar(50),
-	Email varchar(100),
-	Password varchar(100),
-	Phone varchar(20),
+	Email varchar(100) NOT NULL,
+	Password varchar(100) NOT NULL,
 )
 
 create table Customer (
