@@ -1,5 +1,6 @@
 ﻿using shop_qr.View;
 using System;
+using System.Windows.Forms;
 
 namespace shop_qr.Presenter
 {
@@ -14,10 +15,18 @@ namespace shop_qr.Presenter
 
         public void Create()
         {
-            Model.Customer customer = new Model.Customer();
-            customer.FullName = view.FullName;
-            customer.Phone = view.Phone;
-            Model.MCustomer.Create(customer);
+            if (view.FullName.Length > 0 && view.Phone.Length > 0)
+            {
+                Model.Customer customer = new Model.Customer();
+                customer.FullName = view.FullName;
+                customer.Phone = view.Phone;
+                Model.MCustomer.Create(customer);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin");
+            }
+
         }
 
         public void Read()
@@ -31,14 +40,17 @@ namespace shop_qr.Presenter
         }
         public void Update()
         {
-            if(view.Id.Length > 0)
+            if(view.Id.Length > 0 && view.FullName.Length > 0 && view.Phone.Length > 0)
             {
                 Model.Customer customer = new Model.Customer();
                 customer.Id = Int32.Parse( view.Id);
                 customer.FullName = view.FullName;
                 customer.Phone = view.Phone;
                 Model.MCustomer.Update(customer);
-
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin");
             }
         }
         public void Delete()

@@ -30,10 +30,7 @@ namespace shop_qr.View.Product
 
         private void buttonSaveProduct_Click(object sender, EventArgs e)
         {
-            if (this.Name.Length == 0 || this.Price.Length == 0)
-            {
-                return;
-            }
+           
 
             if (this.Id.Length > 0)
             {
@@ -48,7 +45,6 @@ namespace shop_qr.View.Product
                 this.ProductImage = null;
                 this.ProductImagePath = "";
             }
-           
             presenter.Read();
         }
 

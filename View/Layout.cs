@@ -15,7 +15,7 @@ namespace shop_qr.View
         public AppLayout()
         {
             InitializeComponent();
-
+            
             this.panelFormLoader.Controls.Clear();
             View.Bill.formBill FormCustomer_Vrb = new View.Bill.formBill() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FormCustomer_Vrb.FormBorderStyle = FormBorderStyle.None;

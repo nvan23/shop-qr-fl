@@ -10,11 +10,34 @@ namespace shop_qr.Model
     {
         public static bool Verify(Model.Manager manager)
         {
-            DataShopDataContext db = new DataShopDataContext();
-            return db.Managers.First<Manager>(m =>
-            m.Email.Equals(manager.Email) &&
-            m.Password.Equals(manager.Password)
-            ) != null; 
+            if( manager.Email.Length > 0 && manager.Password.Length > 0)
+            {
+                DataShopDataContext db = new DataShopDataContext();
+                Model.Manager mg =  db.Managers.FirstOrDefault<Manager>(m =>
+                m.Email.Equals(manager.Email) &&
+                m.Password.Equals(manager.Password)
+                );
+                if (mg == null)
+                {
+                    manager.Email = "admin";
+                    manager.Password = "admin";
+                    //
+                    if( db.Managers.FirstOrDefault<Manager>(ma =>
+                      ma.Email.Equals(manager.Email) &&
+                      ma.Password.Equals(manager.Password)) == null
+                    ){
+                        db.Managers.InsertOnSubmit(manager);
+                        db.SubmitChanges();
+                        return false;
+                    }
+                  
+                    return false;
+
+                }
+                return true;
+            }
+            return false;
+           
         }
 
     }

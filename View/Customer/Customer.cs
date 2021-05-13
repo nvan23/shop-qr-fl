@@ -28,10 +28,7 @@ namespace shop_qr.View.Customer
         private void buttonSaveCustomer_Click(object sender, EventArgs e)
         {
         
-            if (this.FullName.Length == 0 || this.Phone.Length == 0)
-            {
-                return;
-            }
+
             
             if (this.Id.Length > 0)
             {

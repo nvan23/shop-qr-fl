@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace shop_qr.Presenter
 {
@@ -23,6 +24,7 @@ namespace shop_qr.Presenter
             String customerId = view.CustomerId; 
             if (list.Count ==0 || customerId.Length == 0)
             {
+                MessageBox.Show("Giỏ hàng trống hoặc không có thông tin khách hàng.");
                 return;
             }
            
