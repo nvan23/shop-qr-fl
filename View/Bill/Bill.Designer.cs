@@ -120,7 +120,6 @@ namespace shop_qr.View.Bill
             // 
             // timerQRScannerInBill
             // 
-            this.timerQRScannerInBill.Interval = 1000;
             this.timerQRScannerInBill.Tick += new System.EventHandler(this.timerQRScannerInBill_Tick);
             // 
             // panel13
@@ -1272,6 +1271,7 @@ namespace shop_qr.View.Bill
             // IdProduct
             // 
             this.IdProduct.DataPropertyName = "id";
+            this.IdProduct.FillWeight = 96.35621F;
             this.IdProduct.HeaderText = "Mã SP";
             this.IdProduct.Name = "IdProduct";
             this.IdProduct.ReadOnly = true;
@@ -1279,6 +1279,7 @@ namespace shop_qr.View.Bill
             // NameProduct
             // 
             this.NameProduct.DataPropertyName = "name";
+            this.NameProduct.FillWeight = 87.68415F;
             this.NameProduct.HeaderText = "Tên SP";
             this.NameProduct.Name = "NameProduct";
             this.NameProduct.ReadOnly = true;
@@ -1289,17 +1290,22 @@ namespace shop_qr.View.Bill
             dataGridViewCellStyle3.Format = "C0";
             dataGridViewCellStyle3.NullValue = "0";
             this.PriceProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PriceProduct.FillWeight = 87.68415F;
             this.PriceProduct.HeaderText = "Giá";
             this.PriceProduct.Name = "PriceProduct";
             this.PriceProduct.ReadOnly = true;
             // 
             // Image
             // 
+            this.Image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Image.DataPropertyName = "Image";
+            this.Image.FillWeight = 128.2755F;
             this.Image.HeaderText = "Hình ảnh";
+            this.Image.Image = global::shop_qr.Properties.Resources.product_documents_32px;
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
-            this.Image.Visible = false;
+            this.Image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Image.Width = 78;
             // 
             // formBill
             // 

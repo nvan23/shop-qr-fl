@@ -26,10 +26,7 @@ namespace shop_qr.View.Customer
         public List<Model.Customer> Customers { get => (List<Model.Customer>)dataGridViewCustomer.DataSource; set => dataGridViewCustomer.DataSource = value; }
 
         private void buttonSaveCustomer_Click(object sender, EventArgs e)
-        {
-        
-
-            
+        {            
             if (this.Id.Length > 0)
             {
                 presenter.Update();

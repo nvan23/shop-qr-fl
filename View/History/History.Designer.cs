@@ -960,6 +960,7 @@ namespace shop_qr.View
             this.dataGridViewBillHistory.TabIndex = 7;
             this.dataGridViewBillHistory.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dataGridViewBillHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBillHistory_CellClick);
+            this.dataGridViewBillHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBillHistory_CellContentClick);
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -992,7 +993,6 @@ namespace shop_qr.View
             // 
             // timerPickerInHistory
             // 
-            this.timerPickerInHistory.Interval = 1000;
             this.timerPickerInHistory.Tick += new System.EventHandler(this.timerPickerInHistory_Tick);
             // 
             // History

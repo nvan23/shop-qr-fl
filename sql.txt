@@ -1,14 +1,13 @@
-﻿
-create table Manager (
+﻿create table Manager (
 	Id int IDENTITY(1,1) PRIMARY KEY,
-	Email varchar(100) NOT NULL,
-	Password varchar(100) NOT NULL,
+	Email nvarchar(100) NOT NULL,
+	Password nvarchar(100) NOT NULL,
 )
 
 create table Customer (
 	Id int IDENTITY(1,1) PRIMARY KEY,
-	FullName varchar(50),
-	Phone varchar(20),
+	FullName nvarchar(50),
+	Phone nvarchar(20),
 	)
 create table Bill (
 	Id int IDENTITY(1,1) PRIMARY KEY,
@@ -19,7 +18,7 @@ create table Bill (
 
 create table Product (
 	Id int IDENTITY(1,1) PRIMARY KEY,
-	Name varchar(100),
+	Name nvarchar(100),
 	Price money,
 	Image varbinary(MAX),
 )

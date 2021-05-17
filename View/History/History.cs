@@ -25,8 +25,6 @@ namespace shop_qr.View
             presenter.Read();
         }
 
-        MJPEGStream stream;
-
         FilterInfoCollection filterInfoCollectionInHistory;
         VideoCaptureDevice videoCaptureDeviceInHistory;
        
@@ -48,7 +46,6 @@ namespace shop_qr.View
                 presenter.CalculateTotal();
                 presenter.GetCustomerById((int)row.CustomerId);
                 presenter.ReadByCustomerId((int)row.CustomerId);
-                Details = new List<Model.MProductBill>();
             }
         }
 
@@ -124,6 +121,11 @@ namespace shop_qr.View
             videoCaptureDeviceInHistory.NewFrame += FinalFrame_NewFrame;
             videoCaptureDeviceInHistory.Start();
             timerPickerInHistory.Start();
+        }
+
+        private void dataGridViewBillHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
